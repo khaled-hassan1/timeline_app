@@ -397,22 +397,80 @@ document.addEventListener("DOMContentLoaded", function () {
     ,
     "riyadhDescription": { en: "TIMELINE for Production and Events", ar: "تايم لاين للإنتاج والفعاليات" },
     "riyadhAddress": { en: "P.O. Box 235800 Riyadh 11332", ar: "ص.ب 235800 الرياض 11332" },
-    "riyadhAddress2": { en: "P.O. Box 235800 Riyadh 11332", ar: "ص.ب 235800 الرياض 11332" },
-    "riyadhTel": { en: "Tel: +966 11 464 3719", ar: "هاتف: +966 11 464 3719" },
-    "riyadhTel2": { en: "Tel: +966 11 464 3719", ar: "هاتف: +966 11 464 3719" },
-    "riyadhMob": { en: "Mob: +966 50 440 3847", ar: "موبايل: +966 50 440 3847" },
-    "riyadhMob1": { en: "Mob: +966 50 440 3847", ar: "موبايل: +966 50 440 3847" },
-    "riyadhMob2": { en: "Mob2: +966 53 238 7201", ar: "موبايل2: +966 53 238 7201" },
-    "riyadhMob2-2": { en: "Mob2: +966 53 238 7201", ar: "موبايل2: +966 53 238 7201" },
+    "riyadhAddress2": {
+      "en": "P.O. Box",
+      "ar": "ص.ب"
+    },
+    "riyadhAddressRiyadh": {
+      "en": "Riyadh",
+      "ar": "الرياض"
+    },
+    "riyadhAddressNumbers": {
+      "boxNumber": "235800",
+      "postalCode": "11332"
+    },
+
+    "telLabel": {
+      en: "Tel:",
+      ar: "الهاتف:"
+    },
+    "mobLabel": {
+      en: "Mob:",
+      ar: "الجوال:"
+    },
+    "mobLabe2": {
+      en: "Mob2:",
+      ar: "جوال 2:"
+    },
+    "telLabel-2": {
+      en: "Tel:",
+      ar: "الهاتف:"
+    },
+    "mobLabel-2": {
+      en: "Mob:",
+      ar: "الجوال:"
+    },
+    "mobLabe2-2": {
+      en: "Mob2:",
+      ar: "جوال 2:"
+    },
+    "telLabel-3": {
+      en: "Tel:",
+      ar: "الهاتف:"
+    },
+    "mobLabel-3": {
+      en: "Mob:",
+      ar: "الجوال:"
+    },
+    "mobLabel-4": {
+      en: "Mob:",
+      ar: "الجوال:"
+    },
+    "telLabel-4": {
+      en: "Tel:",
+      ar: "الهاتف:"
+    },
+    "mobLabel-5": {
+      en: "Mob:",
+      ar: "الجوال:"
+    },
+    "mobLabe2-3": {
+      en: "Mob2:",
+      ar: "جوال 2:"
+    },
+
+    "riyadhTel": { en: "+966 11 464 3719", ar: "+966 11 464 3719" },
+    "riyadhMob": { en: "+966 50 440 3847", ar: "+966 50 440 3847" },
+    "riyadhMob2": { en: "+966 53 238 7201", ar: "+966 53 238 7201" },
     "emailUs": { en: "Email Us", ar: "راسلنا عبر البريد الإلكتروني" },
 
     // Cairo Location
     "cairoLocation": { en: "CAIRO", ar: "القاهرة" },
     "cairoDescription": { en: "TIMELINE for Production", ar: "تايم لاين للإنتاج" },
     "cairoAddress": { en: "Bavaria Town, Building 18, Floor 9, Apartment 1", ar: "مدينة بافاريا، المبنى 18، الطابق 9، الشقة 1" },
-    "cairoTel": { en: "Tel: +2 02 236 5870", ar: "هاتف: +2 02 236 5870" },
-    "cairoMob": { en: "Mob: +2 010 6456 1113", ar: "موبايل: +2 010 6456 1113" },
-    "cairoMob2": { en: "Mob2: +2 010 9177 2344", ar: "موبايل2: +2 010 9177 2344" },
+    "cairoTel": { en: "+2 02 236 5870", ar: "+2 02 236 5870" },
+    "cairoMob": { en: "+2 010 6456 1113", ar: "+2 010 6456 1113" },
+    "cairoMob2": { en: "+2 010 9177 2344", ar: "+2 010 9177 2344" },
     "contactCallUsCairo": { en: "Call Us (CAIRO)", ar: "اتصل بنا (القاهرة)" },
     "contactEgypt": { en: "EGYPT", ar: "مصر" },
     // London Location
@@ -421,8 +479,8 @@ document.addEventListener("DOMContentLoaded", function () {
     "contactCallUsLondon": { en: "Call Us (LONDON)", ar: "اتصل بنا (لندن)" },
     "londonDescription": { en: "TIMELINE resources ltd", ar: "تايم لاين للموارد المحدودة" },
     "londonAddress": { en: "6TH FLOOR GRACECHURCH STREET", ar: "الطابق السادس، شارع جريس تشورش" },
-    "londonTel": { en: "Tel: +44 207 264 4444", ar: "هاتف: +44 207 264 4444" },
-    "londonMob": { en: "Mob: +44 795 718 5593", ar: "موبايل: +44 795 718 5593" },
+    "londonTel": { en: "+44 207 264 4444", ar: "+44 207 264 4444" },
+    "londonMob": { en: "+44 795 718 5593", ar: "+44 795 718 5593" },
 
     // Istanbul Location
     "istanbulLocation": { en: "ISTANBUL", ar: "إسطنبول" },
@@ -433,7 +491,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ,
     "istanbulDescription": { en: "TIMELINE for Production", ar: "تايم لاين للإنتاج" },
     "istanbulAddress": { en: "GÜRSEL MAH. 28 NISAN CAD. NO: 6 IC KAPI NO: 3", ar: "غورسيل ماه. 28 نيسان كاد. رقم 6 باب داخلي رقم 3" },
-    "istanbulMob": { en: "Mob: +90 535 551 1442", ar: "موبايل: +90 535 551 1442" },
+    "istanbulMob": { en: "+90 535 551 1442", ar: "+90 535 551 1442" },
 
     "eventManagementLink": { en: "Event Management", ar: "إدارة الفعاليات" },
     "ourServicesProductionLink": { en: "Our Services - Production", ar: "خدماتنا - الإنتاج" },
@@ -463,8 +521,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     "awardAI2018Title": { en: "Acquisition International Global Excellence Awards 2018", ar: "جوائز التميز العالمية من Acquisition International لعام 2018" },
     "awardAI2018Text": { en: "Most Advanced Video Production Company 2018 – 9K Quality Innovators", ar: "أكثر شركات الإنتاج تطورًا لعام 2018 – مبتكرو جودة 9K" }
-    , 
-    
+    ,
+
     "client1TitleText": { en: "The Biban exhibition by Monshaat", ar: "معرض بيبان من منشآت" },
     "client1TextText": { en: "(Dammam, Riyadh) 2019 - (Hael, Riyadh) 2019 (Riyadh, Riyadh) 2020", ar: "(الدمام، الرياض) 2019 - (حائل، الرياض) 2019 (الرياض، الرياض) 2020" },
     "client2TitleText": { en: "The annual ceremony of Bank Albilad", ar: "الحفل السنوي لبنك البلاد" },
