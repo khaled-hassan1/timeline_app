@@ -1945,9 +1945,6 @@ html[lang="ar"] .contact .info-item i {
   border-radius: 5px;
 }
 
-.carousel-container .prev {
-  left: 10px;
-}
 
 .carousel-container .next {
   right: 10px;
@@ -2039,4 +2036,10 @@ html[lang="ar"] .contact .info-item i {
 }
 .padding-riyadh{
   padding: 0 5px;
+}
+
+@media (max-width: 767.98px) {
+  .logo {
+    display: none;
+  }
 }

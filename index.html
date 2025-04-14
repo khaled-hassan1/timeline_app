@@ -42,8 +42,9 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.jpg" alt="logo">
+        <!-- Hide image only on small devices -->
+        <img src="assets/img/logo-nav.jpg" alt="logo" class="d-none d-sm-block">
+        <!-- Always show the site name -->
         <h1 class="sitename">TimeLine</h1>
       </a>
 
@@ -75,7 +76,6 @@
         <h2 id="heroTitle">Explore Our Journey</h2>
         <p id="heroDescription">Follow the milestones that shaped our path in audio-visual production, events, and
           creative storytelling.</p>
-        <!-- <a href="#timeline" class="btn-scroll" title="Scroll Down"><i class="bi bi-chevron-down"></i></a> -->
       </div>
 
 
@@ -639,7 +639,7 @@
 
 
     <!-- OUR EXPERIENCE Section -->
-    <section class="experience section">
+    <section class="experience section" id="experience-link">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
           <h2 id="experienceTitle">OUR EXPERIENCE</h2>
@@ -1089,7 +1089,7 @@
             <li><a href="#Pre-Production" id="preProductionLink">Pre-Production</a></li>
             <li><a href="#post-production" id="postProductionLink">Post-Production</a></li>
             <li><a href="#time-lapse" id="timeLapseLink">Time Lapse</a></li>
-            <li><a href="#experience" id="experienceLink">Experience</a></li>
+            <li><a href="#experience-link" id="experienceLink">Experience</a></li>
             <li><a href="#awards" id="awardsNav2">Awards</a></li>
           </ul>
 
@@ -1118,7 +1118,6 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" title="Back to top">
     <i class="bi bi-arrow-up-short"></i>
   </a>
-
 
   <!-- Preloader -->
   <div id="preloader"></div>
