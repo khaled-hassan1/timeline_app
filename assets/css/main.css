@@ -5,10 +5,11 @@ html[lang="ar"] {
 
 /* Fonts */
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway", sans-serif;
-  --nav-font: "Poppins", sans-serif;
+  --default-font: "Cairo", "Roboto", "Noto Sans Arabic", "Noto Sans", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --heading-font: "Cairo", "Tajawal", sans-serif;
+  --nav-font: "Cairo", sans-serif;
 }
+
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
@@ -190,7 +191,7 @@ h6 {
 ------------------------------*/
 .scrolled .header {
   --background-color: #9b59b6;
-  color: white;
+  color: var(--surface-color);
 }
 
 /*--------------------------------------------------------------
@@ -745,11 +746,20 @@ section,
 }
 
 .section-title h2 {
-  font-size: 32px;
+  /* font-size: 32px;
   font-weight: 700;
   margin-bottom: 15px;
+  z-index: 1; */
+
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
   position: relative;
   z-index: 1;
+
 }
 
 .section-title h2::after {
@@ -763,6 +773,7 @@ section,
   background: url(../img/section-title-bg.png) no-repeat;
   z-index: -1;
 }
+
 
 .section-title p {
   margin-bottom: 0;
@@ -923,6 +934,7 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
+
   background-color: var(--surface-color);
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   padding: 50px 30px;
@@ -931,6 +943,112 @@ section,
   position: relative;
   z-index: 1;
 }
+
+.cursor {
+  cursor: pointer;
+}
+
+/* الكلاسات المشتركة لجميع الأقسام اللي فيها خلفية */
+.bg-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+/* كل سكشن يضيف صورة الخلفية الخاصة بيه */
+.post-production {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://www.motionedits.com/wp-content/uploads/2022/10/7-Essential-Post-Production-Steps-That-Lead-To-A-Successful-Video.jpg');
+}
+
+.our-services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://imagestudios.com/wp-content/uploads/2024/03/Video-Production-banner.png');
+}
+
+.pre-production {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://assets.videomaker.com/2003/02/pre-production-art.jpg');
+}
+
+.production {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://www.purdue.edu/innovativelearning/wp-content/uploads/2022/05/banner-video-production.jpg');
+}
+
+.event-management {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://www.showtimeevent.com/images/main-slider/corporate-event-planner.webp');
+}
+
+.time-lapse {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://www.wallpaperflare.com/static/1020/1008/45/light-trails-road-cityscape-long-exposure-wallpaper.jpg');
+}
+
+.experience {
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://media.gettyimages.com/id/1488592798/video/travelling-with-high-speed-long-exposure-blurred-motion-light-streaks-abstract-background.jpg?s=640x640&k=20&c=xZzp98V2JJWqKayG6OQyWdRQ6KvsvndafUi-Ee0pOeY=');
+}
+
+.awards {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://media.istockphoto.com/id/1208152999/photo/trophy-with-smoke-effect-holding-on-hand-and-background-blue-and-violet-light-for-e-sport.jpg?s=612x612&w=0&k=20&c=syVR_CDSD5MfKlbLNT1Ykqwb_WUWTY9BQVSvIMdvseE=');
+}
+
+.our-clients {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://media.istockphoto.com/id/1404269031/vector/handshake-in-digital-futuristic-style-the-concept-of-partnership-collaboration-or-teamwork.jpg?s=612x612&w=0&k=20&c=9NqXaD5TYaBG78b213lcmhJvbyCZ07RYj3LGnYJWiUQ=');
+}
+
+/* الوضع العادي بالإنجليزي */
+.prev::before {
+  content: "<";
+}
+
+.next::before {
+  content: ">";
+}
+
+/* عكس الاتجاه في اللغة العربية */
+[lang="ar"] .prev::before {
+  content: ">";
+}
+
+[lang="ar"] .next::before {
+  content: "<";
+}
+
+.awards p,
+.awards h4 {
+  color: var(--surface-color);
+}
+
+
+[lang="ar"] .experienceTitle {
+  font-size: 70px;
+  text-align: center;
+}
+
+.break {
+  height: 200px;
+  background-color: #EEE;
+  width: 100%;
+}
+
+
+/* .postProductionTitle {
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+} */
+
 
 .services .service-item:before {
   content: "";
@@ -1573,6 +1691,10 @@ html[lang="ar"] .contact .info-item i {
   .contact .php-email-form {
     padding: 20px;
   }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
 }
 
 .contact .php-email-form input[type=text],
@@ -1806,6 +1928,9 @@ html[lang="ar"] .contact .info-item i {
   padding-left: 0;
   max-width: 900px;
   margin: 0 auto;
+  color: var(--surface-color);
+  font-weight: 600;
+  font-size: large;
 }
 
 .experience-list li {
@@ -1841,7 +1966,7 @@ html[lang="ar"] .contact .info-item i {
 }
 
 .client-item {
-  background: white;
+  background: var(--surface-color);
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -1933,7 +2058,7 @@ html[lang="ar"] .contact .info-item i {
 /* Navigation Buttons Styling */
 .carousel-container button {
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: var(--surface-color);
   border: none;
   padding: 10px;
   position: absolute;
@@ -1979,7 +2104,7 @@ html[lang="ar"] .contact .info-item i {
 /* Navigation Buttons Styling */
 .carousel-container button {
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: var(--surface-color);
   border: none;
   padding: 10px;
   position: absolute;
@@ -2034,7 +2159,8 @@ html[lang="ar"] .contact .info-item i {
 .fax-footer {
   font-family: Arial, Helvetica, sans-serif;
 }
-.padding-riyadh{
+
+.padding-riyadh {
   padding: 0 5px;
 }
 

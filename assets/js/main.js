@@ -506,21 +506,24 @@ document.addEventListener("DOMContentLoaded", function () {
     "privacyPolicy": { en: "Privacy Policy", ar: "سياسة الخصوصية" },
 
     // Awards Section
-    "awardsTitle": { en: "OUR INTERNATIONAL AWARDS", ar: "جوائزنا الدولية" },
-    "award2015Title": { en: "MEA BUSINESS AWARDS 2015", ar: "جوائز الأعمال MEA لعام 2015" },
-    "award2015Text": { en: "Best Audiovisual Company 2015 in Saudi Arabia", ar: "أفضل شركة إنتاج مرئي ومسموع في السعودية 2015" },
-
-    "award2016Title": { en: "MEA BUSINESS AWARDS 2016", ar: "جوائز الأعمال MEA لعام 2016" },
-    "award2016Text": { en: "Best Audiovisual Company 2016 in Saudi Arabia", ar: "أفضل شركة إنتاج مرئي ومسموع في السعودية 2016" },
-
-    "awardCLW2016Title": { en: "Corporate LiveWire Innovation & Excellence Awards 2016", ar: "جوائز Corporate LiveWire للابتكار والتميز 2016" },
-    "awardCLW2016Text": { en: "Innovation and Excellence in Audiovisual Production in Saudi Arabia", ar: "الابتكار والتميز في الإنتاج المرئي والمسموع في السعودية" },
-
-    "awardCLW2017Title": { en: "Corporate LiveWire Innovation & Excellence Awards 2017", ar: "جوائز Corporate LiveWire للابتكار والتميز 2017" },
-    "awardCLW2017Text": { en: "Innovation & Excellence for Content Management in Audiovisual Production", ar: "الابتكار والتميز في إدارة المحتوى بالإنتاج المرئي والمسموع" },
-
-    "awardAI2018Title": { en: "Acquisition International Global Excellence Awards 2018", ar: "جوائز التميز العالمية من Acquisition International لعام 2018" },
-    "awardAI2018Text": { en: "Most Advanced Video Production Company 2018 – 9K Quality Innovators", ar: "أكثر شركات الإنتاج تطورًا لعام 2018 – مبتكرو جودة 9K" }
+    
+    
+      "awardsTitle": { "en": "OUR INTERNATIONAL AWARDS", "ar": "جوائزنا الدولية" },
+      
+      "award2015Title": { "en": "⭐ MEA BUSINESS AWARDS 2015", "ar": "⭐ جوائز الأعمال MEA لعام 2015" },
+      "award2015Text": { "en": "Best Audiovisual Company 2015 in Saudi Arabia", "ar": "أفضل شركة إنتاج مرئي ومسموع في السعودية 2015" },
+      
+      "award2016Title": { "en": "⭐ MEA BUSINESS AWARDS 2016", "ar": "⭐ جوائز الأعمال MEA لعام 2016" },
+      "award2016Text": { "en": "Best Audiovisual Company 2016 in Saudi Arabia", "ar": "أفضل شركة إنتاج مرئي ومسموع في السعودية 2016" },
+      
+      "awardCLW2016Title": { "en": "⭐ Corporate LiveWire Innovation & Excellence Awards 2016", "ar": "⭐ جوائز Corporate LiveWire للابتكار والتميز 2016" },
+      "awardCLW2016Text": { "en": "Innovation and Excellence in Audiovisual Production in Saudi Arabia", "ar": "الابتكار والتميز في الإنتاج المرئي والمسموع في السعودية" },
+      
+      "awardCLW2017Title": { "en": "⭐ Corporate LiveWire Innovation & Excellence Awards 2017", "ar": "⭐ جوائز Corporate LiveWire للابتكار والتميز 2017" },
+      "awardCLW2017Text": { "en": "Innovation & Excellence for Content Management in Audiovisual Production ", "ar": "الابتكار والتميز في إدارة المحتوى بالإنتاج المرئي والمسموع" },
+      
+      "awardAI2018Title": { "en": "⭐ Acquisition International Global Excellence Awards 2018", "ar": "⭐ جوائز التميز العالمية من Acquisition International لعام 2018" },
+      "awardAI2018Text": { "en": "Most Advanced Video Production Company 2018 – 9K Quality Innovators", "ar": "أكثر شركات الإنتاج تطورًا لعام 2018 – مبتكرو جودة 9K" }
     ,
 
     "client1TitleText": { en: "The Biban exhibition by Monshaat", ar: "معرض بيبان من منشآت" },
@@ -544,46 +547,48 @@ document.addEventListener("DOMContentLoaded", function () {
     "client10TitleText": { en: "The annual ceremony of SABB", ar: "الحفل السنوي للبنك السعودي البريطاني" },
     "client10TextText": { en: "2022", ar: "2022" },
 
+
     "experienceItem1": {
       en: "▻ The inauguration ceremony of Wa’ad Al Shamal (Ministry of Mineral Resources).",
-      ar: "▻ حفل تدشين وعد الشمال (وزارة الثروة المعدنية)."
+      ar: "◅ حفل تدشين وعد الشمال (وزارة الثروة المعدنية)."
     },
     "experienceItem2": {
       en: "▻ The inauguration ceremony of Ras Al Khair (Ministry of Industry and Mineral Resources).",
-      ar: "▻ حفل تدشين رأس الخير (وزارة الصناعة والثروة المعدنية)."
+      ar: "◅ حفل تدشين رأس الخير (وزارة الصناعة والثروة المعدنية)."
     },
     "experienceItem3": {
       en: "▻ The exhibition of distinguished cities in the era of the Custodian of the Two Holy Mosques.",
-      ar: "▻ معرض المدن المتميزة في عهد خادم الحرمين الشريفين."
+      ar: "◅ معرض المدن المتميزة في عهد خادم الحرمين الشريفين."
     },
     "experienceItem4": {
       en: "▻ The Biban exhibition by Monshaat (Dammam, Riyadh) 2019.",
-      ar: "▻ معرض بيبان من منشآت (الدمام، الرياض) 2019."
+      ar: "◅ معرض بيبان من منشآت (الدمام، الرياض) 2019."
     },
     "experienceItem5": {
       en: "▻ The Biban exhibition by Monshaat (Hael, Riyadh) 2019.",
-      ar: "▻ معرض بيبان من منشآت (حائل، الرياض) 2019."
+      ar: "◅ معرض بيبان من منشآت (حائل، الرياض) 2019."
     },
     "experienceItem6": {
       en: "▻ The Biban exhibition by Monshaat (Riyadh, Riyadh) 2020.",
-      ar: "▻ معرض بيبان من منشآت (الرياض، الرياض) 2020."
+      ar: "◅ معرض بيبان من منشآت (الرياض، الرياض) 2020."
     },
     "experienceItem7": {
       en: "▻ The annual ceremony of Bank Albilad 2019.",
-      ar: "▻ الحفل السنوي لبنك البلاد 2019."
+      ar: "◅ الحفل السنوي لبنك البلاد 2019."
     },
     "experienceItem8": {
       en: "▻ The annual ceremony of SABB 2022.",
-      ar: "▻ الحفل السنوي للبنك السعودي البريطاني (ساب) 2022."
+      ar: "◅ الحفل السنوي للبنك السعودي البريطاني (ساب) 2022."
     },
     "experienceItem9": {
       en: "▻ In partnership with The Three offer Outstanding City Projects Exhibition 2022.",
-      ar: "▻ بالشراكة مع The Three: معرض مشاريع المدن البارزة 2022."
+      ar: "◅ بالشراكة مع The Three: معرض مشاريع المدن البارزة 2022."
     },
     "experienceItem10": {
       en: "▻ In partnership with Grocery Agency, the organization of the Half Million Celebration (fifth annual celebration), and the inauguration ceremony for Details Real Estate 2023.",
-      ar: "▻ بالشراكة مع وكالة Grocery: تنظيم احتفالية النصف مليون (الاحتفالية السنوية الخامسة) وحفل تدشين شركة ديتيلز العقارية 2023."
+      ar: "◅ بالشراكة مع وكالة Grocery: تنظيم احتفالية النصف مليون (الاحتفالية السنوية الخامسة) وحفل تدشين شركة ديتيلز العقارية 2023."
     }
+
   }
 
   let currentLanguage = localStorage.getItem("language") || "ar";
@@ -614,4 +619,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateLanguage(); // تطبيق اللغة المختارة عند تحميل الصفحة
 });
-
