@@ -770,7 +770,7 @@ section,
   transform: translate(-50%, -50%);
   width: 122px;
   height: 66px;
-/*  background: url(../img/section-title-bg.png) no-repeat;*/
+ /* background: url(../img/section-title-bg.png) no-repeat; */
   z-index: -1;
 }
 
@@ -2168,4 +2168,13 @@ html[lang="ar"] .contact .info-item i {
   .logo {
     display: none;
   }
+}
+
+.logo-footer{
+  margin-top: 50px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-content: center;
+  justify-items: center;
 }
