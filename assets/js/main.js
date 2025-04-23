@@ -209,40 +209,48 @@
 })();
 
 document.addEventListener('DOMContentLoaded', function () {
-  const carousel = document.getElementById('carousel');
+  const carousel = document.getElementById('clients-carousel');
 
-  // Create and append images to the carousel
+  // إضافة الصور
   for (let i = 1; i <= 25; i++) {
     const img = document.createElement('img');
     img.src = `https://timeline.sa/wp-content/uploads/2018/05/tl-clients-${i}.jpg`;
     img.alt = `Client Image ${i}`;
-    img.classList.add('client-image');
     carousel.appendChild(img);
   }
 
-  let currentIndex = 0;
-  const totalImages = 25;
+  // تحديد اتجاه الصفحة
+  const isRTL = document.documentElement.dir === 'rtl';
 
-  // Function to move to the next slide
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalImages;
-    const offset = -currentIndex * (document.querySelector('.client-image').clientWidth + 15); // 15px margin between images
-    carousel.style.transform = `translateX(${offset}px)`;
-  }
+  // تهيئة Glider
+  const glider = new Glider(carousel, {
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    draggable: true,
+    rtl: isRTL,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+    ],
+  });
 
-  // Function to move to the previous slide
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-    const offset = -currentIndex * (document.querySelector('.client-image').clientWidth + 15);
-    carousel.style.transform = `translateX(${offset}px)`;
-  }
-
-  // Automatic slide transition every 3 seconds
-  setInterval(nextSlide, 3000);
-
-  // Add event listeners for previous and next buttons
-  document.querySelector('.prev').addEventListener('click', prevSlide);
-  document.querySelector('.next').addEventListener('click', nextSlide);
+  // التمرير التلقائي
+  setInterval(() => {
+    let nextIndex = glider.getCurrentSlide() + (isRTL ? -1 : 1);
+    if (nextIndex >= glider.slides.length) nextIndex = 0;
+    if (nextIndex < 0) nextIndex = glider.slides.length - 1;
+    glider.scrollItem(nextIndex);
+  }, 3000);
 });
 
 
@@ -506,24 +514,24 @@ document.addEventListener("DOMContentLoaded", function () {
     "privacyPolicy": { en: "Privacy Policy", ar: "سياسة الخصوصية" },
 
     // Awards Section
-    
-    
-      "awardsTitle": { "en": "OUR INTERNATIONAL AWARDS", "ar": "جوائزنا الدولية" },
-      
-      "award2015Title": { "en": "⭐ MEA BUSINESS AWARDS 2015", "ar": "⭐ جوائز الأعمال MEA لعام 2015" },
-      "award2015Text": { "en": "Best Audiovisual Company 2015 in Saudi Arabia", "ar": "أفضل شركة إنتاج مرئي ومسموع في السعودية 2015" },
-      
-      "award2016Title": { "en": "⭐ MEA BUSINESS AWARDS 2016", "ar": "⭐ جوائز الأعمال MEA لعام 2016" },
-      "award2016Text": { "en": "Best Audiovisual Company 2016 in Saudi Arabia", "ar": "أفضل شركة إنتاج مرئي ومسموع في السعودية 2016" },
-      
-      "awardCLW2016Title": { "en": "⭐ Corporate LiveWire Innovation & Excellence Awards 2016", "ar": "⭐ جوائز Corporate LiveWire للابتكار والتميز 2016" },
-      "awardCLW2016Text": { "en": "Innovation and Excellence in Audiovisual Production in Saudi Arabia", "ar": "الابتكار والتميز في الإنتاج المرئي والمسموع في السعودية" },
-      
-      "awardCLW2017Title": { "en": "⭐ Corporate LiveWire Innovation & Excellence Awards 2017", "ar": "⭐ جوائز Corporate LiveWire للابتكار والتميز 2017" },
-      "awardCLW2017Text": { "en": "Innovation & Excellence for Content Management in Audiovisual Production ", "ar": "الابتكار والتميز في إدارة المحتوى بالإنتاج المرئي والمسموع" },
-      
-      "awardAI2018Title": { "en": "⭐ Acquisition International Global Excellence Awards 2018", "ar": "⭐ جوائز التميز العالمية من Acquisition International لعام 2018" },
-      "awardAI2018Text": { "en": "Most Advanced Video Production Company 2018 – 9K Quality Innovators", "ar": "أكثر شركات الإنتاج تطورًا لعام 2018 – مبتكرو جودة 9K" }
+
+
+    "awardsTitle": { "en": "OUR INTERNATIONAL AWARDS", "ar": "جوائزنا الدولية" },
+
+    "award2015Title": { "en": "⭐ MEA BUSINESS AWARDS 2015", "ar": "⭐ جوائز الأعمال MEA لعام 2015" },
+    "award2015Text": { "en": "Best Audiovisual Company 2015 in Saudi Arabia", "ar": "أفضل شركة إنتاج مرئي ومسموع في السعودية 2015" },
+
+    "award2016Title": { "en": "⭐ MEA BUSINESS AWARDS 2016", "ar": "⭐ جوائز الأعمال MEA لعام 2016" },
+    "award2016Text": { "en": "Best Audiovisual Company 2016 in Saudi Arabia", "ar": "أفضل شركة إنتاج مرئي ومسموع في السعودية 2016" },
+
+    "awardCLW2016Title": { "en": "⭐ Corporate LiveWire Innovation & Excellence Awards 2016", "ar": "⭐ جوائز Corporate LiveWire للابتكار والتميز 2016" },
+    "awardCLW2016Text": { "en": "Innovation and Excellence in Audiovisual Production in Saudi Arabia", "ar": "الابتكار والتميز في الإنتاج المرئي والمسموع في السعودية" },
+
+    "awardCLW2017Title": { "en": "⭐ Corporate LiveWire Innovation & Excellence Awards 2017", "ar": "⭐ جوائز Corporate LiveWire للابتكار والتميز 2017" },
+    "awardCLW2017Text": { "en": "Innovation & Excellence for Content Management in Audiovisual Production ", "ar": "الابتكار والتميز في إدارة المحتوى بالإنتاج المرئي والمسموع" },
+
+    "awardAI2018Title": { "en": "⭐ Acquisition International Global Excellence Awards 2018", "ar": "⭐ جوائز التميز العالمية من Acquisition International لعام 2018" },
+    "awardAI2018Text": { "en": "Most Advanced Video Production Company 2018 – 9K Quality Innovators", "ar": "أكثر شركات الإنتاج تطورًا لعام 2018 – مبتكرو جودة 9K" }
     ,
 
     "client1TitleText": { en: "The Biban exhibition by Monshaat", ar: "معرض بيبان من منشآت" },

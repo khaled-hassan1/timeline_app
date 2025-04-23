@@ -2,6 +2,10 @@ html[lang="ar"] {
   direction: rtl;
 }
 
+/* html{
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+} */
 
 /* Fonts */
 :root {
@@ -303,7 +307,7 @@ h6 {
     color: var(--nav-color);
     font-size: 28px;
     line-height: 0;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     cursor: pointer;
     transition: color 0.3s;
   }
@@ -2115,6 +2119,19 @@ html[lang="ar"] .contact .info-item i {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.glider-contain {
+  padding: 30px;
+  margin: auto;
+  width: 90%;
+  position: relative;
+}
+
+.glider img {
+  max-width: 100%;
+  height: 0;
+  margin: 0 10px;
+  border-radius: 8px;
+}
 
 .lang-btn {
   background: transparent;
@@ -2134,6 +2151,7 @@ html[lang="ar"] .contact .info-item i {
 
 .logo-nav {
   padding: 0px 10px;
+  margin: 0px 20px;
 }
 
 .padding-btn {
@@ -2172,3 +2190,4 @@ html[lang="ar"] .contact .info-item i {
 .contact-us-bg {
   background-color: #eee6f4;
 }
+

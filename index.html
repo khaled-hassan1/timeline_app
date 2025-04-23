@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -30,6 +30,12 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Glider.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
+  <!-- Glider.js JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -782,19 +788,13 @@
       </div>
 
       <!-- Carousel Section -->
-      <div class="carousel-container">
-        <div class="carousel" id="carousel">
-          <!-- Images will be dynamically inserted here -->
-        </div>
-
-        <!-- Previous and Next Buttons -->
-        <div class="carousel-wrapper">
-          <button class="prev" aria-label="Previous"></button>
-          <div id="carousel" class="carousel"></div>
-          <button class="next" aria-label="Next"></button>
-        </div>
-
+      <div class="glider-contain">
+        <!-- <button class="glider-prev">«</button> -->
+        <div class="glider" id="clients-carousel"></div>
+        <!-- <button class="glider-next">»</button> -->
       </div>
+
+
 
     </section>
 
@@ -1126,7 +1126,7 @@
 
 
       </div>
-      
+
   </footer>
 
   <!-- Scroll Top -->
