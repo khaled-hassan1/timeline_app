@@ -256,8 +256,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Navigation
     "homeNav": { en: "Home", ar: "الرئيسية" },
     "homeNav2": { en: "Home", ar: "الرئيسية" },
-    "aboutNav": { en: "About", ar: "عن الموقع" },
-    "aboutNav2": { en: "About", ar: "عن الموقع" },
+    "aboutNav": { en: "About", ar: "من نحن" },
+    "aboutNav2": { en: "About", ar: "من نحن" },
     "servicesNav": { en: "Services", ar: "الخدمات" },
     "servicesNav2": { en: "Services", ar: "الخدمات" },
     "awardsNav": { en: "Awards", ar: "الجوائز" },
@@ -618,4 +618,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   updateLanguage(); // تطبيق اللغة المختارة عند تحميل الصفحة
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const langButton = document.getElementById("languageButton");
+  const isRTL = document.documentElement.dir === "rtl";
+
+  // ضيف الكلاس حسب الاتجاه
+  if (isRTL) {
+    langButton.classList.add("me-auto");
+  } else {
+    langButton.classList.add("ms-auto");
+  }
 });

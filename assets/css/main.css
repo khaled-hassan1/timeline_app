@@ -19,7 +19,7 @@ html[lang="ar"] {
   /* Default color used for the majority of the text content across the entire website */
   --heading-color: #2f4d5a;
   /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #9b59b6;
+  --accent-color: #842b7c;
   /* Purple accent color: used for buttons, links, and highlights */
   --surface-color: #ffffff;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -31,7 +31,7 @@ html[lang="ar"] {
 :root {
   --nav-color: #ffffff;
   /* The default color of the main navmenu links */
-  --nav-hover-color: #9b59b6;
+  --nav-hover-color: #842b7c;
   /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff;
   /* Used as the background color for mobile navigation menu */
@@ -39,7 +39,7 @@ html[lang="ar"] {
   /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444;
   /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #9b59b6;
+  --nav-dropdown-hover-color: #842b7c;
   /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
@@ -59,7 +59,7 @@ html[lang="ar"] {
 }
 
 .accent-background {
-  --background-color: #9b59b6;
+  --background-color: #842b7c;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #8ec4dd;
@@ -80,7 +80,7 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: rgb(248, 180, 250);
   text-decoration: none;
   transition: 0.3s;
 }
@@ -164,15 +164,7 @@ h6 {
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
-}
-
-.header .logo {
-  line-height: 1;
-}
-
-.header .logo img {
-  max-height: 32px;
-  margin-right: 8px;
+  height: 50px;
 }
 
 .header .logo h1 {
@@ -190,8 +182,9 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #9b59b6;
+  --background-color: #842b7c;
   color: var(--surface-color);
+  height: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -770,7 +763,7 @@ section,
   transform: translate(-50%, -50%);
   width: 122px;
   height: 66px;
- /* background: url(../img/section-title-bg.png) no-repeat; */
+  /* background: url(../img/section-title-bg.png) no-repeat; */
   z-index: -1;
 }
 
@@ -1908,16 +1901,9 @@ html[lang="ar"] .contact .info-item i {
 
 .mission-title,
 .vision-title {
+  font-weight: bold;
   margin-top: 3rem;
-  color: #9b2c7b;
-}
-
-.mission-title {
-  margin-top: 3rem;
-}
-
-.vision-title {
-  margin-top: 2rem;
+  color: var(--accent-color);
 }
 
 
@@ -2146,9 +2132,15 @@ html[lang="ar"] .contact .info-item i {
   background: rgba(255, 255, 255, 0.1);
 }
 
-[lang="ar"] .sitename {
-  padding: 10px;
+.logo-nav {
+  padding: 0px 10px;
 }
+
+.padding-btn {
+  margin: 0px 20px;
+}
+
+
 
 .ltr-number {
   direction: ltr;
@@ -2165,16 +2157,18 @@ html[lang="ar"] .contact .info-item i {
 }
 
 @media (max-width: 767.98px) {
-  .logo {
-    display: none;
+  .padding-btn {
+    margin: 0px 5px;
   }
 }
 
-.logo-footer{
-  margin-top: 50px;
+.logo-footer {
+  margin: 50px;
   height: 100px;
   width: 100px;
   display: flex;
-  align-content: center;
-  justify-items: center;
+}
+
+.contact-us-bg {
+  background-color: #eee6f4;
 }

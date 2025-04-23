@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="TimeLine Production & Events" />
   <link rel="manifest" href="assets/img/logo/site.webmanifest" />
-  
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -39,15 +39,18 @@
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
+    <div class="logo-nav">
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Hide image only on small devices -->
-        <!-- <img src="assets/img/logo-nav.jpg" alt="logo" class="d-none d-sm-block"> -->
         <!-- Always show the site name -->
         <h1 class="sitename">TimeLine</h1>
       </a>
+    </div>
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
+
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       <nav id="navmenu" class="navmenu">
 
         <ul>
@@ -58,11 +61,14 @@
           <li><a href="#contact" id="contactNav">Contact</a></li>
         </ul>
       </nav>
-      <button id="languageButton" class="lang-btn" type="button">
-        <span>عربي</span>
-      </button>
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+      <div class="pdding-btn">
+        <button id="languageButton" class="lang-btn" type="button">
+          <span>عربي</span>
+        </button>
+      </div>
     </div>
+
   </header>
 
   <main class="main">
@@ -918,8 +924,9 @@
       </div>
 
     </section><!-- /Testimonials Section -->
+    <div class="break"></div>
 
-    <section id="contact" class="contact section">
+    <section id="contact" class="contact section contact-us-bg">
 
       <div class="container section-title" data-aos="fade-up">
         <h2 id="contactTitle">Contact</h2>
@@ -1091,14 +1098,16 @@
 
         </div>
         <div class="col-lg-2 col-md-3 footer-links">
-          <div class="logo-footer">
-            <img src="assets/img/logo-nav.jpg" alt="logo">
-          </div>
+          <a href="#hero">
+            <div class="logo-footer">
+              <img src="assets/img/logo-nav.jpg" alt="logo">
+            </div>
+          </a>
 
         </div>
-        
 
-        
+
+
         <a id="privacyPolicy" href="https://timeline.sa/privacy-policy/" target="_blank" rel="noopener">Privacy
           Policy</a>
 
@@ -1117,6 +1126,7 @@
 
 
       </div>
+      
   </footer>
 
   <!-- Scroll Top -->
