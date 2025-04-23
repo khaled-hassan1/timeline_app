@@ -2,10 +2,10 @@ html[lang="ar"] {
   direction: rtl;
 }
 
-/* html{
+html {
   scrollbar-width: none;
   -ms-overflow-style: none;
-} */
+}
 
 /* Fonts */
 :root {
@@ -2181,13 +2181,10 @@ html[lang="ar"] .contact .info-item i {
 }
 
 .logo-footer {
-  margin: 50px;
-  height: 100px;
+  margin: auto;
   width: 100px;
-  display: flex;
 }
 
 .contact-us-bg {
   background-color: #eee6f4;
 }
-
