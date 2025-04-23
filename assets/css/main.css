@@ -2133,7 +2133,7 @@ html[lang="ar"] .contact .info-item i {
   border-radius: 8px;
 }
 
-.lang-btn {
+/* .lang-btn {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -2147,7 +2147,7 @@ html[lang="ar"] .contact .info-item i {
 
 .lang-btn:hover {
   background: rgba(255, 255, 255, 0.1);
-}
+} */
 
 .logo-nav {
   padding: 0px 10px;
