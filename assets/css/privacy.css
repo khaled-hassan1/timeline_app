@@ -1,0 +1,100 @@
+body {
+    font-family: sans-serif;
+    /* خط أساسي */
+    line-height: 1.6;
+    /* تباعد الأسطر للقراءة */
+    margin: 20px;
+    /* هامش حول المحتوى */
+    background-color: #f4f4f4;
+    /* لون خلفية خفيف */
+    color: #333;
+    /* لون النص الأساسي */
+}
+
+.container {
+    max-width: 960px;
+    /* عرض أقصى للحاوية لتسهيل القراءة على الشاشات الكبيرة */
+    margin: 0 auto;
+    /* توسيط الحاوية أفقيًا */
+    background-color: #fff;
+    /* لون خلفية الحاوية */
+    padding: 30px;
+    /* مساحة داخل الحاوية */
+    border-radius: 8px;
+    /* حواف مستديرة للحاوية */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* ظل خفيف للحاوية */
+}
+
+h1,
+h2,
+h3 {
+    color: #842b7c;
+    /* لون العناوين */
+    margin-top: 2em;
+    /* مساحة أعلى العنوان */
+    margin-bottom: 1em;
+    /* مساحة أسفل العنوان */
+}
+
+.has-large-font-size {
+    font-size: 2em;
+    /* حجم خط كبير */
+    font-weight: bold;
+    /* خط عريض */
+    color: #842b7c;
+    /* لون مميز */
+    margin-bottom: 1.5em;
+}
+
+p {
+    margin-bottom: 1em;
+    /* مساحة أسفل الفقرات */
+}
+
+ul.wp-block-list {
+    list-style-type: disc;
+    /* شكل النقاط في القائمة */
+    margin-left: 20px;
+    /* مسافة بادئة للقائمة */
+    margin-bottom: 1em;
+}
+
+ul.wp-block-list li {
+    margin-bottom: 0.5em;
+    /* مساحة أسفل عناصر القائمة */
+}
+
+#main {
+    padding-top: 20px;
+    /* إضافة مساحة أعلى منطقة المحتوى الرئيسية */
+    padding-bottom: 20px;
+    /* إضافة مساحة أسفل منطقة المحتوى الرئيسية */
+}
+
+#content-wrap {
+    display: flex;
+    /* استخدام فليكس لتنظيم المحتوى والشريط الجانبي */
+    flex-direction: column;
+    /* ترتيب العناصر عموديًا بشكل افتراضي */
+}
+
+#primary {
+    flex: 1;
+    /* جعل منطقة المحتوى الرئيسية تأخذ المساحة المتبقية */
+}
+
+/* للشاشات الأكبر، يمكنك عرض الشريط الجانبي على اليمين */
+@media (min-width: 768px) {
+    #content-wrap {
+        flex-direction: row;
+        /* ترتيب العناصر أفقيًا على الشاشات الأكبر */
+    }
+
+    #primary {
+        flex: 2;
+        /* تخصيص مساحة أكبر للمحتوى الرئيسي */
+        order: 1;
+        /* يظهر أولاً */
+    }
+}

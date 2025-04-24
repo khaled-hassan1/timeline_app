@@ -232,25 +232,25 @@ document.addEventListener('DOMContentLoaded', function () {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 6,
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         }
       },
     ],
   });
 
-  // التمرير التلقائي
-  setInterval(() => {
-    let nextIndex = glider.getCurrentSlide() + (isRTL ? -1 : 1);
-    if (nextIndex >= glider.slides.length) nextIndex = 0;
-    if (nextIndex < 0) nextIndex = glider.slides.length - 1;
-    glider.scrollItem(nextIndex);
-  }, 3000);
+  if (isRTL) {
+    document.getElementById('glider-prev').addEventListener('click', () => glider.scrollItem('next'));
+    document.getElementById('glider-next').addEventListener('click', () => glider.scrollItem('prev'));
+  } else {
+    document.getElementById('glider-prev').addEventListener('click', () => glider.scrollItem('prev'));
+    document.getElementById('glider-next').addEventListener('click', () => glider.scrollItem('next'));
+  }
 });
 
 
@@ -272,6 +272,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "awardsNav2": { en: "Awards", ar: "الجوائز" },
     "contactNav": { en: "Contact", ar: "اتصل بنا" },
     "contactNav2": { en: "Contact", ar: "اتصل بنا" },
+    "ourBusinessNav": { en: "Our business", ar: "أعمالنا" },
     "languageButton": { en: "عربي", ar: "English" },
     // Hero Section
     "heroTitle": { en: "Explore Our Journey", ar: "اكتشف رحلتنا" },
@@ -628,14 +629,25 @@ document.addEventListener("DOMContentLoaded", function () {
   updateLanguage(); // تطبيق اللغة المختارة عند تحميل الصفحة
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const langButton = document.getElementById("languageButton");
-  const isRTL = document.documentElement.dir === "rtl";
 
-  // ضيف الكلاس حسب الاتجاه
-  if (isRTL) {
-    langButton.classList.add("me-auto");
-  } else {
-    langButton.classList.add("ms-auto");
+
+document.addEventListener('DOMContentLoaded', function () {
+  const footerAboutDiv = document.querySelector('.footer-about');
+
+  function isArabic() {
+    const htmlElement = document.querySelector('html');
+    return htmlElement.getAttribute('lang') === 'ar';
+    // يمكنك استخدام طريقة أخرى للتحقق من اللغة إذا لزم الأمر
+    // return document.body.classList.contains('rtl');
+  }
+
+  if (footerAboutDiv) {
+    if (isArabic()) {
+      footerAboutDiv.classList.remove('text-md-start');
+      footerAboutDiv.classList.add('text-md-end');
+    } else {
+      footerAboutDiv.classList.remove('text-md-end');
+      footerAboutDiv.classList.add('text-md-start');
+    }
   }
 });

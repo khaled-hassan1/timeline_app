@@ -4,9 +4,28 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>TimeLine Production & Events</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>TimeLine Production & Events | Professional Event Management Services</title>
+  <meta name="description"
+    content="TimeLine Production & Events offers comprehensive event planning, production, and management services for corporate events, weddings, and special occasions across the country.">
+  <meta name="keywords"
+    content="event planning, production services, corporate events, wedding planning, special occasions, event management, TimeLine Events">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://timeline.sa/" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="TimeLine Production & Events | Professional Event Management Services">
+  <meta property="og:description"
+    content="Professional event planning and production services for corporate events, weddings, and special occasions.">
+  <meta property="og:image" content="https://timeline.sa/assets/img/og-image.jpg">
+  <meta property="og:url" content="https://timeline.sa">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TimeLine Production & Events">
+  <meta name="twitter:description" content="Professional event planning and production services for all occasions.">
+  <meta name="twitter:image" content="https://timeline.sa/assets/img/twitter-image.jpg">
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="assets/img/logo/favicon-96x96.png" sizes="96x96" />
@@ -40,6 +59,19 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Schema.org markup for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EventService",
+    "name": "TimeLine Production & Events",
+    "description": "Professional event planning and production services for corporate events, weddings, and special occasions.",
+    "url": "https://timeline.sa",
+    "logo": "https://timeline.sa/assets/img/logo/logo.png",
+    "image": "https://timeline.sa/assets/img/hero-image.jpg",
+    "telephone": "+966 11 464 3719",
+  }
+  </script>
 </head>
 
 <body class="index-page">
@@ -59,11 +91,13 @@
       <nav id="navmenu" class="navmenu">
 
         <ul>
-          <li><a href="#footer">Footer</a></li>
+          <!-- <li><a href="#footer">Footer</a></li> -->
           <li><a href="#hero" id="homeNav">Home</a></li>
           <li><a href="#about" id="aboutNav">About</a></li>
           <li><a href="#services" id="servicesNav">Services</a></li>
           <li><a href="#awards" id="awardsNav">Awards</a></li>
+          <li><a href="https://vimeo.com/timelinepe" target="_blank" rel="noopener" id="ourBusinessNav">Our business</a>
+          </li>
           <li><a href="#contact" id="contactNav">Contact</a></li>
           <li>
             <a href="" id="languageButton" class=""><span>عربي</span></a>
@@ -76,12 +110,22 @@
         <button id="languageButton" class="lang-btn" type="button">
           <span>عربي</span>
         </button> -->
-      </div>
+    </div>
     </div>
 
   </header>
 
   <main class="main">
+
+    <!-- Hero Section -->
+    <section class="hero section accent-background">
+      <video autoplay loop muted poster="assets\img\poster.png">
+        <source src="assets\video\event-managment.mp4" type="video/mp4">
+        متصفحك لا يدعم تشغيل الفيديو.
+      </video>
+      <div class="video-overlay"></div>
+
+    </section><!-- /Hero Section -->
 
     <!-- Hero Section -->
     <section id="hero" class="hero section accent-background">
@@ -792,11 +836,19 @@
       </div>
 
       <!-- Carousel Section -->
-      <div class="glider-contain">
-        <!-- <button class="glider-prev">«</button> -->
-        <div class="glider" id="clients-carousel"></div>
-        <!-- <button class="glider-next">»</button> -->
+      <div class="p">
+        <div class="glider-contain">
+          <div class="glider" id="clients-carousel"></div>
+        </div>
+        <!-- <button class="glider-prev">«</button>
+        <button class="glider-next">»</button> -->
       </div>
+
+      <ul class="sticky-buttons">
+        <li><button id="glider-prev" aria-label="Previous" class="button-st" type="button">&#8249;</button></li>
+        <li><button id="glider-next" aria-label="Next" class="button-st" type="button">&#8250;</button></li>
+      </ul>
+
 
 
 
@@ -1041,20 +1093,22 @@
 
       </div>
       <br>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.139289973458!2d46.716526!3d24.708479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0328906917dd%3A0x30973882a1390879!2sRiyadh%20-%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1678880000000"
-        frameborder="0" allowfullscreen="" title="Map showing Riyadh, Saudi Arabia" class="responsive-iframe"></iframe>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3621.3495736102223!2d46.6371748!3d24.8177162!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee48f829dd475%3A0xe53e9ae4866a4c81!2zUkFZQTQ1NDTYjCA0NTQ0INin2YbYsyDYqNmGINmF2KfZhNmDINmE2YHYsdi52YrYjCA2ODY12Iwg2K3ZiiDYp9mE2YrYp9iz2YXZitmG2Iwg2KfZhNix2YrYp9i2IDEzMzI12Iwg2KfZhNiz2LnZiNiv2YrYqQ!5e0!3m2!1sar!2seg!4v1745449697070!5m2!1sar!2seg"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
 
     </section>
 
   </main>
-  
+
   <footer id="footer" class="footer dark-background">
     <div class="container footer-top">
       <div class="row gy-4">
-        
+
         <!-- About & Contact Info -->
-        <div class="col-lg-4 col-md-6 footer-about text-center text-md-start">
+        <div class="col-lg-4 col-md-6 footer-about text-center text-md-end">
           <a href="index.html" class="logo d-flex align-items-center justify-content-center justify-content-md-start">
             <span class="sitename">TIMELINE</span>
           </a>
@@ -1071,14 +1125,28 @@
             <p><strong id="mobLabe2-3">Mob2:</strong> <span class="ltr-number">+966 53 238 7201</span></p>
           </div>
           <div class="social-links d-flex justify-content-center justify-content-md-start mt-4">
-            <a href="https://www.youtube.com/@timelinesa3835" target="_blank" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
-            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/@timelinesa3835" rel="noopener" target="_blank" aria-label="Youtube"><i
+                class="bi bi-youtube"></i></a>
+            <a href="mailto:info@timeline.sa" aria-label="Email">
+              <i class="bi bi-envelope"></i>
+            </a>
+            <a href="https://vimeo.com/timelinepe" rel="noopener" target="_blank" aria-label="Vimeo">
+              <i class="bi bi-vimeo"></i>
+            </a>
+            <a href="https://x.com/timeline_sa" rel="noopener" target="_blank" aria-label="X (Twitter)">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://www.instagram.com/timeline_sa/" rel="noopener" target="_blank" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.designrush.com/agency/profile/timeline-for-production-events" rel="noopener"
+              target="_blank" aria-label="DesignRush Profile">
+              <span>DR</span>
+            </a>
           </div>
         </div>
-        
-  
+
+
         <!-- Useful Links -->
         <div class="col-lg-2 col-md-3 col-6 footer-links">
           <h4 id="footerUsefulLinksTitle">Useful Links</h4>
@@ -1089,7 +1157,7 @@
             <li><a href="#contact" id="contactNav2">Contact</a></li>
           </ul>
         </div>
-  
+
         <!-- Our Services -->
         <div class="col-lg-2 col-md-3 col-6 footer-links">
           <h4 id="footerOurServicesTitle">Our Services</h4>
@@ -1104,22 +1172,25 @@
             <li><a href="#awards" id="awardsNav2">Awards</a></li>
           </ul>
         </div>
-  
+
         <!-- Logo Image -->
         <div class="col-lg-4 col-md-12 footer-links text-center">
           <a href="#hero">
             <div class="logo-footer">
-              <img src="assets/img/logo-nav.jpg" alt="logo" class="img-fluid" style="max-width: 150px;">
+              <img src="assets/img/logo-nav.jpg" alt="logo" class="img-fluid">
             </div>
           </a>
           <div class="col-12 text-center mt-3">
-            <a id="privacyPolicy" href="https://timeline.sa/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
+            <a id="privacyPolicy" href="privacy.html" target="_blank" rel="noopener">Privacy
+              Policy</a>
+            <!-- <a id="privacyPolicy" href="https://timeline.sa/privacy-policy/" target="_blank" rel="noopener">Privacy
+              Policy</a> -->
           </div>
-          
+
         </div>
-  
+
       </div>
-  
+
       <!-- Copyright -->
       <div class="copyright text-center mt-4">
         <p>
@@ -1134,7 +1205,7 @@
       </div>
     </div>
   </footer>
-  
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" title="Back to top">
     <i class="bi bi-arrow-up-short"></i>
