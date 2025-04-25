@@ -1934,14 +1934,11 @@ html[lang="ar"] .contact .info-item i {
   font-size: 1.1rem;
 }
 
-.who-we-are-title {
+.who-we-are-title-bold h2 {
   color: #9b2c7b;
-  font-weight: 300;
-}
-
-.who-we-are-title-bold {
-  color: #9b2c7b;
-  font-weight: 800;
+  display: inline-block;
+  font-weight: bold;
+  font-family: var(--heading-font);
 }
 
 .mission-title,
