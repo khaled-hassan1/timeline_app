@@ -254,6 +254,36 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const video = document.querySelector("#hero video");
+
+  // نحاول نشغّل الفيديو أول ما الصفحة تفتح
+  const tryPlay = () => {
+    if (video) {
+      video.play().catch((error) => {
+        console.log("Autoplay issue:", error);
+        // ممكن تضيف زرار "تشغيل الفيديو" لو حبيت
+      });
+    }
+  };
+
+  // تشغيل الفيديو أول ما الصفحة تجهز
+  tryPlay();
+
+  // إعادة التشغيل لما المستخدم يرجع للتاب
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+      tryPlay();
+    }
+  });
+
+  // لو المتصفح وقف الفيديو بعد فترة (موبايلات أحيانًا تعمل كده)
+  video.addEventListener("pause", function () {
+    if (document.visibilityState === "visible") {
+      tryPlay();
+    }
+  });
+});
 
 // ***********************************************************
 
