@@ -508,7 +508,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "cairoDescription": { en: "TIMELINE for Production", ar: "تايم لاين للإنتاج" },
     "cairoAddress": { en: "Bavaria Town, Building 18, Floor 9, Apartment 1", ar: "مدينة بافاريا، المبنى 18، الطابق 9، الشقة 1" },
     "cairoTel": { en: "+2 02 236 5870", ar: "+2 02 236 5870" },
-    "cairoMob": { en: "+2 010 6456 1113", ar: "+2 010 6456 1113" },
+    "cairoMob": { en: "+2 010 9177 2344", ar: "+2 010 9177 2344" },
     "cairoMob2": { en: "+2 010 9177 2344", ar: "+2 010 9177 2344" },
     "contactCallUsCairo": { en: "Call Us (CAIRO)", ar: "اتصل بنا (القاهرة)" },
     "contactEgypt": { en: "EGYPT", ar: "مصر" },
