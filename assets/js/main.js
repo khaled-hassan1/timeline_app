@@ -529,7 +529,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "contactCallUsIstanbul": { en: "Call Us (ISTANBUL)", ar: "اتصل بنا (اسطنبول)" }
     ,
     "istanbulDescription": { en: "TIMELINE for Production", ar: "تايم لاين للإنتاج" },
-    "istanbulAddress": { en: "GÜRSEL MAH. 28 NISAN CAD. NO: 6 IC KAPI NO: 3", ar: "غورسيل ماه. 28 نيسان كاد. رقم 6 باب داخلي رقم 3" },
+    "istanbulAddress": { en: "GÜRSEL MAH. 28 NİSAN CAD. NO: 6 İÇ KAPI NO: 3 KAĞITHANE / İSTANBUL", ar: "حي غورسل، شارع 28 نيسان، المبنى رقم 6، الباب الداخلي رقم 3، في منطقة كاغيتهانه، إسطنبول" },
     "istanbulMob": { en: "+90 535 551 1442", ar: "+90 535 551 1442" },
 
     "eventManagementLink": { en: "Event Management", ar: "إدارة الفعاليات" },
