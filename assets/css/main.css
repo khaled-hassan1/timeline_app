@@ -1042,6 +1042,20 @@ section,
     url('https://media.istockphoto.com/id/1404269031/vector/handshake-in-digital-futuristic-style-the-concept-of-partnership-collaboration-or-teamwork.jpg?s=612x612&w=0&k=20&c=9NqXaD5TYaBG78b213lcmhJvbyCZ07RYj3LGnYJWiUQ=');
 }
 
+.background-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/background-contact.jpg);
+}
+
+.contactDescription {
+  color: white;
+}
+
+.award-link:hover h4,
+.award-link:hover p {
+  font-weight: bold;
+}
+
 /* الوضع العادي بالإنجليزي */
 .prev::before {
   content: "<";
