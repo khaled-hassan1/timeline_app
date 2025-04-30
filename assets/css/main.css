@@ -2261,6 +2261,10 @@ html[lang="ar"] .contact .info-item i {
   margin: auto;
 }
 
+.logo-footer h1 {
+  font-weight: bold;
+}
+
 .contact-us-bg {
   background-color: #eee6f4;
 }
