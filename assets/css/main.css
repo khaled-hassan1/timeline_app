@@ -1056,6 +1056,11 @@ section,
   font-weight: bold;
 }
 
+.award-item {
+  width: 500px;
+  max-width: 100%;
+}
+
 /* الوضع العادي بالإنجليزي */
 .prev::before {
   content: "<";

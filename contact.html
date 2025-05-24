@@ -100,6 +100,7 @@
                     <li><a href="https://vimeo.com/timelinepe" target="_blank" rel="noopener" id="ourBusinessNav">Our
                             business</a>
                     </li>
+                    <li><a href="contact.html" id="contactNav">Contact</a></li>
                     <li>
                         <a href="" id="languageButton" class=""><span>عربي</span></a>
                     </li>
@@ -117,15 +118,15 @@
     </header>
 
     <main class="main">
-        <section id="hero" class="hero section accent-background">
+        <!-- <section id="hero" class="hero section accent-background">
             <video autoplay loop muted playsinline poster="assets/img/poster.png">
                 <source src="assets/video/contact.mp4" type="video/mp4">
                 متصفحك لا يدعم تشغيل الفيديو.
             </video>
             <div class="video-overlay"></div>
 
-        </section>
-        <br><br><br>
+        </section> -->
+        <!-- <br><br><br> -->
         <section id="contact" class="contact section contact-us-bg bg-section background-contact">
 
             <div class="container section-title" data-aos="fade-up">
@@ -251,18 +252,64 @@
                         </div>
                     </div>
                 </div>
+                <br>
+                <!-- Centered Contact Form Start -->
+                <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-6">
+                        <form action="forms/contact.php" method="post" class="php-email-form">
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <label for="name-field" class="form-label" id="label-name">Your Name</label>
+                                    <input type="text" name="name" id="name-field" class="form-control" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email-field" class="form-label" id="label-email">Your Email</label>
+                                    <input type="email" name="email" id="email-field" class="form-control" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="subject-field" class="form-label" id="label-subject">Subject</label>
+                                    <input type="text" name="subject" id="subject-field" class="form-control" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="message-field" class="form-label" id="label-message">Message</label>
+                                    <textarea name="message" id="message-field" rows="8" class="form-control"
+                                        required></textarea>
+                                </div>
+
+                                <div class="col-12 text-center">
+                                    <div class="loading" id="text-loading">Loading</div>
+                                    <div class="error-message" id="text-error">An error occurred</div>
+                                    <div class="sent-message" id="text-sent">Your message has been sent. Thank you!
+                                    </div>
+                                    <button type="submit" id="btn-send" class="btn btn-primary px-5">Send
+                                        Message</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Centered Contact Form End -->
 
             </div>
+
             <br>
+
             <div class="map-container">
+
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d231756.18581721338!2d46.7905245!3d24.8231614!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee5e90538d3df%3A0xdb3549eca436c798!2sTimeline%20for%20Production%20%26%20Events!5e0!3m2!1sen!2seg!4v1745587328880!5m2!1sen!2seg"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                     title="Google Maps showing Timeline for Production & Events location"></iframe>
+
             </div>
 
         </section>
-
     </main>
 
     <footer id="footer" class="footer dark-background">
@@ -324,7 +371,8 @@
                     <h4 id="footerOurServicesTitle">Our Services</h4>
                     <ul>
                         <li><a href="index.html#event-management" id="eventManagementLink">Event Management</a></li>
-                        <li><a href="index.html#services" id="ourServicesProductionLink">Our Services - Production</a></li>
+                        <li><a href="index.html#services" id="ourServicesProductionLink">Our Services - Production</a>
+                        </li>
                         <li><a href="production.html" id="productionLink">Production</a></li>
                         <li><a href="production.html#Pre-Production" id="preProductionLink">Pre-Production</a></li>
                         <li><a href="production.html#post-production" id="postProductionLink">Post-Production</a></li>

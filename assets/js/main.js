@@ -626,7 +626,31 @@ document.addEventListener("DOMContentLoaded", function () {
     "experienceItem10": {
       en: "▻ In partnership with Grocery Agency, the organization of the Half Million Celebration (fifth annual celebration), and the inauguration ceremony for Details Real Estate 2023.",
       ar: "◅ بالشراكة مع وكالة Grocery: تنظيم احتفالية النصف مليون (الاحتفالية السنوية الخامسة) وحفل تدشين شركة ديتيلز العقارية 2023."
-    }
+    },
+    // contact form
+    "label-name": { en: "Your Name", ar: "الاسم" },
+    "label-email": { en: "Your Email", ar: "البريد الإلكتروني" },
+    "label-subject": { en: "Subject", ar: "الموضوع" },
+    "label-message": { en: "Message", ar: "الرسالة" },
+
+    "text-loading": {
+      en: "Loading",
+      ar: "جاري الإرسال..."
+    },
+    "text-error": {
+      en: "An error occurred",
+      ar: "حدث خطأ، حاول مرة أخرى"
+    },
+    "text-sent": {
+      en: "Your message has been sent. Thank you!",
+      ar: "تم إرسال رسالتك. شكرًا لك!"
+    },
+
+    "btn-send": {
+      en: "Send Message",
+      ar: "إرسال الرسالة"
+    },
+
 
   }
 
