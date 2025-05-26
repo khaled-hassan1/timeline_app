@@ -354,6 +354,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "logisticsAndSchedulingTitle": { en: "Logistics and Scheduling", ar: "التنسيق اللوجستي والجدولة" },
     "logisticsAndSchedulingText": { en: "Plan the logistics for video shoots, including locations, schedule, and necessary permissions. Arrange for equipment and crew required for the shoot.", ar: "نخطط للجوانب اللوجستية لعمليات التصوير شاملة المواقع والجداول الزمنية والتصاريح المطلوبة، مع تأمين المعدات وطاقم العمل اللازم." },
     "productionTitle": { en: "Methodology", ar: "المنهجية" },
+    "productionTitle-section": { en: "PRODUCTION", ar: "الإنتاج" },
     "filmingTitle": { en: "Filming", ar: "التصوير" },
     "filmingText": { en: "Conduct video shoots at various locations, including Riyadh Valley Co.'s facilities, project sites, and offices. Capture high-quality footage of the company's environment, activities, and products.", ar: "ننفذ عمليات التصوير في مواقع متنوعة تشمل مرافق شركة وادي الرياض ومواقع المشاريع والمكاتب، مع التقاط لقطات عالية الجودة لبيئة الشركة وأنشطتها ومنتجاتها." },
     "interviewsTitle": { en: "Interviews", ar: "المقابلات الشخصية" },

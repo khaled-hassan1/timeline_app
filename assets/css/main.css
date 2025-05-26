@@ -210,7 +210,22 @@ h6 {
 
 /*--------------------------------------------------------------
 # Navigation Menu
---------------------------------------------------------------*/
+/* Option A: logical property (best) */
+.toggle-dropdown {
+  margin-inline-start: 0.5rem;
+}
+
+/* Option B: explicit dir-based override */
+html[dir="ltr"] .toggle-dropdown {
+  margin-left: 0.5rem;
+}
+
+html[dir="rtl"] .toggle-dropdown {
+  margin-right: 0.5rem;
+}
+
+
+/*--------------------------------------------------------------*/
 /* Desktop Navigation */
 @media (min-width: 1200px) {
   .navmenu {
@@ -758,13 +773,6 @@ section,
     transition: 0.3s;
     background-color:
       color-mix(in srgb, var(--accent-color), transparent 90%);
-  }
-
-  [lang="ar"] .navmenu a,
-  .navmenu a:focus {
-    padding: 10px 15px;
-    margin-right: 2px;
-    text-align: right;
   }
 
   section,
