@@ -304,6 +304,90 @@ document.addEventListener("DOMContentLoaded", function () {
     "contactNav2": { en: "Contact", ar: "تواصل معنا" },
     "ourBusinessNav": { en: "Our business", ar: "أعمالنا" },
     "languageButton": { en: "عربي", ar: "English" },
+    // Sanad Video
+    "sanadTitle": {
+      en: "Sanad - Award Distribution Ceremony",
+      ar: "حفل توزيع جوائز سند"
+    },
+    "sanadDescription": {
+      en: "A highlight reel of the Sanad Award Distribution Ceremony, celebrating achievements and recognizing excellence.",
+      ar: "ملخص لأبرز لحظات حفل توزيع جوائز سند، احتفالاً بالإنجازات وتكريماً للتميز."
+    },
+    // Riyadh Valley Main Film
+    "riyadhValleyTitle": {
+      en: "Riyadh Valley Main Film",
+      ar: "الفيلم الرئيسي لوادي الرياض"
+    },
+    "riyadhValleyDescription": {
+      en: "Explore the vision and development of Riyadh Valley through its main introductory film, showcasing its impact and future.",
+      ar: "اكتشف رؤية وتطور وادي الرياض من خلال فيلمه التعريفي الرئيسي، الذي يسلط الضوء على تأثيره ومستقبله."
+    },
+    // Timeline Showreel
+    "timelineShowreelTitle": {
+      en: "Timeline Showreel",
+      ar: "أبرز أعمالنا"
+    },
+    "timelineShowreelDescription": {
+      en: "A comprehensive showreel highlighting key projects and milestones across our company's timeline.",
+      ar: "عرض شامل لأبرز المشاريع والإنجازات على مدار تاريخ شركتنا."
+    },
+    // Tadawul Infographics
+    "tadawulInfographicsTitle": {
+      en: "Tadawul Infographics",
+      ar: "إنفوجرافيك تداول"
+    },
+    "tadawulInfographicsDescription": {
+      en: "Dynamic infographics illustrating key data and trends from the Saudi Exchange (Tadawul).",
+      ar: "إنفوجرافيك ديناميكي يوضح البيانات والاتجاهات الرئيسية من السوق المالية السعودية (تداول)."
+    },
+    // Saudi Exim
+    "saudiEximTitle": {
+      en: "Saudi Exim Bank Film",
+      ar: "فيلم بنك التصدير والاستيراد السعودي"
+    },
+    "saudiEximDescription": {
+      en: "An introductory film for the Saudi Export-Import Bank (Saudi Exim), highlighting its role in boosting national exports.",
+      ar: "فيلم تعريفي لبنك التصدير والاستيراد السعودي (السعودي للاستيراد والتصدير)، يسلط الضوء على دوره في تعزيز الصادرات الوطنية."
+    },
+    // Acwa Power
+    "acwaPowerTitle": {
+      en: "ACWA Power Film",
+      ar: "فيلم أكوا باور"
+    },
+    "acwaPowerDescription": {
+      en: "A corporate film showcasing ACWA Power's commitment to sustainable energy solutions and its global impact.",
+      ar: "فيلم تعريفي لشركة أكوا باور، يعرض التزامها بحلول الطاقة المستدامة وتأثيرها العالمي."
+    },
+    // Madina
+    "madinaTitle": {
+      en: "Madina Development Film",
+      ar: "فيلم تطوير المدينة المنورة"
+    },
+    "madinaDescription": {
+      en: "A film showcasing the ongoing development and future vision for the holy city of Madina.",
+      ar: "فيلم يعرض التطورات الجارية والرؤية المستقبلية للمدينة المنورة."
+    },
+    // Monsha'at
+    "monshaatTitle": {
+      en: "Monsha'at Overview Film",
+      ar: "فيلم تعريفي بمنشآت"
+    },
+    "monshaatDescription": {
+      en: "An informative film about Monsha'at, the General Authority for Small and Medium Enterprises, highlighting its role in supporting entrepreneurship.",
+      ar: "فيلم توضيحي حول هيئة المنشآت الصغيرة والمتوسطة (منشآت)، ودورها في دعم ريادة الأعمال."
+    },
+    // Alandalus Property
+    "alandalusPropertyTitle": {
+      en: "Alandalus Property Film",
+      ar: "فيلم الأندلس العقارية"
+    },
+    "alandalusPropertyDescription": {
+      en: "A corporate film showcasing Alandalus Property's real estate projects and its contribution to urban development.",
+      ar: "فيلم تعريفي يعرض مشاريع الأندلس العقارية ومساهمتها في التنمية العمرانية."
+    },
+    // Portfolio Section
+    "portfolioTitle": { en: "Our Business", ar: "أعمالنا" },
+    "portfolioDescription": { en: "Explore our diverse portfolio of work, showcasing both captivating videos and stunning images.", ar: "استكشف مجموعتنا المتنوعة من الأعمال، التي تعرض مقاطع فيديو آسرة وصورًا مذهلة." },
 
     // Hero Section
     "heroTitle": { en: "Explore Our Journey", ar: "اكتشف رحلتنا" },
@@ -642,6 +726,10 @@ document.addEventListener("DOMContentLoaded", function () {
     "btn-send": {
       en: "Send Message",
       ar: "إرسال الرسالة"
+    },
+    "btn-see-more": {
+      en: "See more",
+      ar: "رؤية المزيد"
     },
 
 
