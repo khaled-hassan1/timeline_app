@@ -85,18 +85,25 @@
         <h1>TimeLine</h1>
       </a>
     </div>
+
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
 
       <nav id="navmenu" class="navmenu">
 
         <ul>
-          <!-- <li><a href="#footer">Footer</a></li> -->
-          <li><a href="#hero" id="homeNav">Home</a></li>
+          <li><a href="#hero" id="homeNav" class="active">Home</a></li>
           <li><a href="#about" id="aboutNav">About</a></li>
           <li><a href="#services" id="servicesNav">Services</a></li>
-          <li><a href="production.html" id="productionTitle">PRODUCTION</a></li>
           <li><a href="awards.html" id="awardsNav">Awards</a></li>
+          <li class="dropdown"><a href="production.html"><span id="productionTitle">Methodology</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#ourServicesProductionTitle" id="productionMenuLink">Production</a></li>
+              <li><a href="#eventManagementTitle" id="eventManagementMenuLink">EVENT MANAGEMENT</a></li>
+              <li><a href="#timeLapseTitle" id="timeLapseMenuLink">TIME LAPSE</a></li>
+            </ul>
+          </li>
           <li><a href="https://vimeo.com/timelinepe" target="_blank" rel="noopener" id="ourBusinessNav">Our business</a>
           </li>
           <li><a href="contact.html" id="contactNav">Contact</a></li>
