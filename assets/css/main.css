@@ -833,9 +833,9 @@ section,
   justify-content: center;
 }
 
-.hero:before {
+.hero::before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 65%);
+  /* background: color-mix(in srgb, var(--background-color), transparent 65%); */
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -859,7 +859,6 @@ section,
   inset: 0;
   background-color: #000000;
   opacity: 0.6;
-  /* شفافية اللون البنفسجي */
   z-index: 1;
 }
 
