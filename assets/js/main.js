@@ -322,12 +322,12 @@ document.addEventListener("DOMContentLoaded", function () {
       en: "Explore the vision and development of Riyadh Valley through its main introductory film, showcasing its impact and future.",
       ar: "اكتشف رؤية وتطور وادي الرياض من خلال فيلمه التعريفي الرئيسي، الذي يسلط الضوء على تأثيره ومستقبله."
     },
-    // Timeline Showreel
-    "timelineShowreelTitle": {
-      en: "Timeline Showreel",
-      ar: "أبرز أعمالنا"
+    // Specific Project: Ras Al Khair
+    "projectRasAlKhairTitle": {
+      en: "Ras Al Khair",
+      ar: "رأس الخير" // Or your preferred Arabic translation for "Ras Al Khair"
     },
-    "timelineShowreelDescription": {
+    "projectRasAlKhairDescription": {
       en: "A comprehensive showreel highlighting key projects and milestones across our company's timeline.",
       ar: "عرض شامل لأبرز المشاريع والإنجازات على مدار تاريخ شركتنا."
     },
