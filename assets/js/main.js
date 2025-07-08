@@ -340,14 +340,14 @@ document.addEventListener("DOMContentLoaded", function () {
       en: "Dynamic infographics illustrating key data and trends from the Saudi Exchange (Tadawul).",
       ar: "إنفوجرافيك ديناميكي يوضح البيانات والاتجاهات الرئيسية من السوق المالية السعودية (تداول)."
     },
-    // Saudi Exim
-    "saudiEximTitle": {
-      en: "Saudi Exim Bank Film",
-      ar: "فيلم بنك التصدير والاستيراد السعودي"
+
+    "swissCornerTitle": {
+      en: "Swiss Corner - Mother Day",
+      ar: "سويس كورنر - عيد الأم"
     },
-    "saudiEximDescription": {
-      en: "An introductory film for the Saudi Export-Import Bank (Saudi Exim), highlighting its role in boosting national exports.",
-      ar: "فيلم تعريفي لبنك التصدير والاستيراد السعودي (السعودي للاستيراد والتصدير)، يسلط الضوء على دوره في تعزيز الصادرات الوطنية."
+    "swissCornerDescription": {
+      en: "A special film by Swiss Corner dedicated to Mother's Day, capturing heartwarming moments.",
+      ar: "فيلم خاص من سويس كورنر بمناسبة عيد الأم، يجسد لحظات مؤثرة ودافئة."
     },
     // Acwa Power
     "acwaPowerTitle": {
@@ -787,4 +787,34 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-document.getElementById('currentYear').textContent = new Date().getFullYear();
+// document.getElementById('currentYear').textContent = new Date().getFullYear();
+// // assets/js/main.js (Add/Modify this section inside your DOMContentLoaded listener)
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   // ... (Your existing code for translations, data-href, data-content, etc.) ...
+
+//   // --- Apply SRC for iframes (data-src) ---
+//   document.querySelectorAll('iframe[data-src]').forEach(element => {
+//     const srcConstant = element.dataset.src; // Access value of data-src
+//     if (AppURLs[srcConstant]) {
+//       element.src = AppURLs[srcConstant];
+//     }
+//   });
+
+
+//   // Apply href for anchor tags and link tags (data-href)
+//   // document.querySelectorAll('[data-href]').forEach(element => {
+//   //   const urlConstant = element.dataset.href; // Access value of data-href
+//   //   if (AppURLs[urlConstant]) {
+//   //     element.href = AppURLs[urlConstant];
+//   //   }
+//   // });
+
+//   // // Apply content for meta tags (data-content)
+//   // document.querySelectorAll('[data-content]').forEach(element => {
+//   //   const contentConstant = element.dataset.content; // Access value of data-content
+//   //   if (AppURLs[contentConstant]) {
+//   //     element.setAttribute('content', AppURLs[contentConstant]);
+//   //   }
+//   // });
+// });
