@@ -211,13 +211,39 @@
 document.addEventListener('DOMContentLoaded', function () {
   const carousel = document.getElementById('clients-carousel');
 
+  const newImageUrls = [
+    "assets/img/clients/client-2.png",
+    "assets/img/clients/client-3.png",
+    "assets/img/clients/client-4.png",
+    "assets/img/clients/client-5.png",
+    "assets/img/clients/client-6.png",
+    "assets/img/clients/client-7.png",
+    "assets/img/clients/client-8.png",
+    "assets/img/clients/client-9.png",
+    "assets/img/clients/client-10.png",
+    "assets/img/clients/client-11.png",
+    "assets/img/clients/client-12.png",
+    "assets/img/clients/client-13.png",
+    "assets/img/clients/client-15.png",
+    "assets/img/clients/client-16.png",
+    "assets/img/clients/client-17.png",
+    "assets/img/clients/client-18.png",
+    "assets/img/clients/client-19.png",
+    "assets/img/clients/client-20.png",
+    "assets/img/clients/client-21.png",
+    "assets/img/clients/client-22.png",
+    "assets/img/clients/client-23.png",
+    "assets/img/clients/client-24.png",
+    "assets/img/clients/client-27.png",
+  ];
+
   // إضافة الصور
-  for (let i = 1; i <= 25; i++) {
+  newImageUrls.forEach((url, index) => {
     const img = document.createElement('img');
-    img.src = `https://timeline.sa/wp-content/uploads/2018/05/tl-clients-${i}.jpg`;
-    img.alt = `Client Image ${i}`;
+    img.src = url;
+    img.alt = `Client Image ${index + 1}`;
     carousel.appendChild(img);
-  }
+  });
 
   // تحديد اتجاه الصفحة
   const isRTL = document.documentElement.dir === 'rtl';
