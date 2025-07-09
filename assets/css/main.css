@@ -1012,67 +1012,6 @@ section,
   cursor: pointer;
 }
 
-/* الكلاسات المشتركة لجميع الأقسام اللي فيها خلفية */
-.bg-section {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-}
-
-/* كل سكشن يضيف صورة الخلفية الخاصة بيه */
-.post-production {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('https://www.motionedits.com/wp-content/uploads/2022/10/7-Essential-Post-Production-Steps-That-Lead-To-A-Successful-Video.jpg');
-}
-
-.our-services {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('https://imagestudios.com/wp-content/uploads/2024/03/Video-Production-banner.png');
-}
-
-.pre-production {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('https://assets.videomaker.com/2003/02/pre-production-art.jpg');
-}
-
-.production {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('https://www.purdue.edu/innovativelearning/wp-content/uploads/2022/05/banner-video-production.jpg');
-}
-
-.event-management {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('https://www.showtimeevent.com/images/main-slider/corporate-event-planner.webp');
-}
-
-.time-lapse {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('https://www.wallpaperflare.com/static/1020/1008/45/light-trails-road-cityscape-long-exposure-wallpaper.jpg');
-}
-
-.experience {
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('https://media.gettyimages.com/id/1488592798/video/travelling-with-high-speed-long-exposure-blurred-motion-light-streaks-abstract-background.jpg?s=640x640&k=20&c=xZzp98V2JJWqKayG6OQyWdRQ6KvsvndafUi-Ee0pOeY=');
-}
-
-.awards {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('https://media.istockphoto.com/id/1208152999/photo/trophy-with-smoke-effect-holding-on-hand-and-background-blue-and-violet-light-for-e-sport.jpg?s=612x612&w=0&k=20&c=syVR_CDSD5MfKlbLNT1Ykqwb_WUWTY9BQVSvIMdvseE=');
-}
-
-.our-clients {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('https://media.istockphoto.com/id/1404269031/vector/handshake-in-digital-futuristic-style-the-concept-of-partnership-collaboration-or-teamwork.jpg?s=612x612&w=0&k=20&c=9NqXaD5TYaBG78b213lcmhJvbyCZ07RYj3LGnYJWiUQ=');
-}
-
-.background-contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../img/background-contact.jpg);
-}
-
 .contactDescription {
   color: white;
 }

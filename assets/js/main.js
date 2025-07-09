@@ -211,31 +211,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const carousel = document.getElementById('clients-carousel');
 
-  const newImageUrls = [
-    "assets/img/clients/client-2.png",
-    "assets/img/clients/client-3.png",
-    "assets/img/clients/client-4.png",
-    "assets/img/clients/client-5.png",
-    "assets/img/clients/client-6.png",
-    "assets/img/clients/client-7.png",
-    "assets/img/clients/client-8.png",
-    "assets/img/clients/client-9.png",
-    "assets/img/clients/client-10.png",
-    "assets/img/clients/client-11.png",
-    "assets/img/clients/client-12.png",
-    "assets/img/clients/client-13.png",
-    "assets/img/clients/client-15.png",
-    "assets/img/clients/client-16.png",
-    "assets/img/clients/client-17.png",
-    "assets/img/clients/client-18.png",
-    "assets/img/clients/client-19.png",
-    "assets/img/clients/client-20.png",
-    "assets/img/clients/client-21.png",
-    "assets/img/clients/client-22.png",
-    "assets/img/clients/client-23.png",
-    "assets/img/clients/client-24.png",
-    "assets/img/clients/client-27.png",
-  ];
+  const newImageUrls = IMAGE_PATHS.CLIENTS_LOGOS;
 
   // إضافة الصور
   newImageUrls.forEach((url, index) => {
@@ -280,36 +256,36 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const video = document.querySelector("#hero video");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const video = document.querySelector("#hero video");
 
-  // نحاول نشغّل الفيديو أول ما الصفحة تفتح
-  const tryPlay = () => {
-    if (video) {
-      video.play().catch((error) => {
-        console.log("Autoplay issue:", error);
-        // ممكن تضيف زرار "تشغيل الفيديو" لو حبيت
-      });
-    }
-  };
+//   // نحاول نشغّل الفيديو أول ما الصفحة تفتح
+//   const tryPlay = () => {
+//     if (video) {
+//       video.play().catch((error) => {
+//         console.log("Autoplay issue:", error);
+//         // ممكن تضيف زرار "تشغيل الفيديو" لو حبيت
+//       });
+//     }
+//   };
 
-  // تشغيل الفيديو أول ما الصفحة تجهز
-  tryPlay();
+//   // تشغيل الفيديو أول ما الصفحة تجهز
+//   tryPlay();
 
-  // إعادة التشغيل لما المستخدم يرجع للتاب
-  document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-      tryPlay();
-    }
-  });
+//   // إعادة التشغيل لما المستخدم يرجع للتاب
+//   document.addEventListener("visibilitychange", function () {
+//     if (document.visibilityState === "visible") {
+//       tryPlay();
+//     }
+//   });
 
-  // لو المتصفح وقف الفيديو بعد فترة (موبايلات أحيانًا تعمل كده)
-  video.addEventListener("pause", function () {
-    if (document.visibilityState === "visible") {
-      tryPlay();
-    }
-  });
-});
+//   // لو المتصفح وقف الفيديو بعد فترة (موبايلات أحيانًا تعمل كده)
+//   video.addEventListener("pause", function () {
+//     if (document.visibilityState === "visible") {
+//       tryPlay();
+//     }
+//   });
+// });
 
 // ***********************************************************
 
@@ -827,14 +803,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  document.querySelectorAll('img[data-src]').forEach(element => {
-    const srcConstant = element.dataset.src; // Access value of data-src
-    if (LINKS[srcConstant]) {
-      element.src = LINKS[srcConstant];
-    }
-  });
-
-
   // Apply href for anchor tags and link tags (data-href)
   document.querySelectorAll('[data-href]').forEach(element => {
     const urlConstant = element.dataset.href; // Access value of data-href
@@ -843,11 +811,71 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Apply content for meta tags (data-content)
-  // document.querySelectorAll('[data-content]').forEach(element => {
-  //   const contentConstant = element.dataset.content; // Access value of data-content
-  //   if (LINKS[contentConstant]) {
-  //     element.setAttribute('content', LINKS[contentConstant]);
-  //   }
-  // });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Function to apply background image
+  const applyBackgroundImage = (selector, imageUrl) => {
+    const element = document.querySelector(selector);
+    if (element) {
+      // Keep the linear-gradient part consistent with your CSS
+      element.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('${imageUrl}')`;
+      element.style.backgroundSize = 'cover';
+      element.style.backgroundPosition = 'center';
+      element.style.backgroundRepeat = 'no-repeat';
+      element.style.backgroundAttachment = 'fixed';
+    }
+  };
+
+  // Apply images to their respective sections
+  applyBackgroundImage('.post-production', IMAGE_PATHS.POST_PRODUCTION_BG);
+  applyBackgroundImage('.our-services', IMAGE_PATHS.OUR_SERVICES_BG);
+  applyBackgroundImage('.pre-production', IMAGE_PATHS.PRE_PRODUCTION_BG);
+  applyBackgroundImage('.production', IMAGE_PATHS.PRODUCTION_BG);
+  applyBackgroundImage('.event-management', IMAGE_PATHS.EVENT_MANAGEMENT_BG);
+  applyBackgroundImage('.time-lapse', IMAGE_PATHS.TIME_LAPSE_BG);
+  applyBackgroundImage('.experience', IMAGE_PATHS.EXPERIENCE_BG);
+  applyBackgroundImage('.awards', IMAGE_PATHS.AWARDS_BG);
+  applyBackgroundImage('.our-clients', IMAGE_PATHS.OUR_CLIENTS_BG);
+  applyBackgroundImage('.background-contact', IMAGE_PATHS.CONTACT_BG);
+
+
+  // --- Video Loading and Autoplay Logic ---
+  const video = document.getElementById('heroVideo'); // Get the video element by its ID
+  const videoSource = document.getElementById('heroVideoSource'); // Get the source element by its ID
+
+  if (video && videoSource) {
+    // 1. Set the source and poster from constants.js
+    video.poster = IMAGE_PATHS.HERO_VIDEO_POSTER;
+    videoSource.src = IMAGE_PATHS.HERO_VIDEO_MP4;
+    video.load(); // Tell the video element to load the new source
+
+    // 2. Autoplay logic (your provided code)
+    const tryPlay = () => {
+      video.play().catch((error) => {
+        console.log("Autoplay issue:", error);
+        // Consider showing a "Play Video" button here if autoplay persistently fails
+      });
+    };
+
+    // Attempt to play once the DOM is ready and source is set
+    tryPlay();
+
+    // Re-attempt playback if visibility changes to visible
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState === "visible") {
+        tryPlay();
+      }
+    });
+
+    // Re-attempt playback if video pauses unexpectedly while visible
+    video.addEventListener("pause", function () {
+      if (document.visibilityState === "visible") {
+        tryPlay();
+      }
+    });
+  } else {
+    console.error("Hero video or video source element not found!");
+  }
 });

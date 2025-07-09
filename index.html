@@ -131,15 +131,12 @@
 
   <main class="main">
     <!-- Hero section with video background -->
-    <div id="hero" class="hero section">
-      <!-- Autoplaying video with fallback message for unsupported browsers -->
-      <video autoplay loop muted playsinline poster="assets/img/poster.png">
-        <!-- Video source hosted on GitHub -->
-        <source src="https://github.com/khaled-hassan1/timeline_app/releases/download/video-upload-1/tl-showreel.mp4"
-          type="video/mp4">
+  <div id="hero" class="hero section">
+    <video autoplay loop muted playsinline id="heroVideo">
+        <source type="video/mp4" id="heroVideoSource">
         متصفحك لا يدعم تشغيل الفيديو.
-      </video>
-    </div>
+    </video>
+</div>
 
     <!-- Hero section with logo and text -->
     <section class="hero section accent-background">
