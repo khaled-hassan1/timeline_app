@@ -103,32 +103,25 @@
       <!-- Main navigation menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <!-- Navigation link to Hero section (current page, marked active) -->
-          <li><a href="#hero" id="homeNav" class="active">Home</a></li>
-          <!-- Navigation link to About section -->
-          <li><a href="#about" id="aboutNav">About</a></li>
-          <!-- Navigation link to Services section -->
-          <li><a href="#services" id="servicesNav">Services</a></li>
-          <!-- Navigation link to Awards page -->
-          <li><a href="awards.html" id="awardsNav">Awards</a></li>
+          <!-- Navigation links to different sections/pages -->
+          <li><a href="#" data-href="HOME" class="active" id="homeNav">Home</a></li>
+          <li><a href="#" data-href="ABOUT" id="aboutNav">About</a></li>
+          <li><a href="#" data-href="SERVICES" id="servicesNav">Services</a></li>
+          <li><a href="#" data-href="AWARDS" id="awardsNav">Awards</a></li>
           <!-- Dropdown menu for methodology-related pages -->
-          <li class="dropdown"><a href="production.html"><span id="productionTitle">Methodology</span>
+          <li class="dropdown"><a href="" data-href="PRODUCTION"><span id="productionTitle">Methodology</span>
               <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <!-- Dropdown link to Production page -->
-              <li><a href="production.html" id="productionMenuLink">Production</a></li>
-              <!-- Dropdown link to Event Management section -->
-              <li><a href="#eventManagementTitle" id="eventManagementMenuLink">EVENT MANAGEMENT</a></li>
-              <!-- Dropdown link to Time Lapse section -->
-              <li><a href="#timeLapseTitle" id="timeLapseMenuLink">TIME LAPSE</a></li>
+              <li><a href="" data-href="PRODUCTION" id="productionMenuLink">Production</a></li>
+              <li><a href="#" data-href="INDEX_EVENT" id="eventManagementMenuLink">EVENT
+                  MANAGEMENT</a></li>
+              <li><a href="#" data-href="INDEX_TIMELABSE" id="timeLapseMenuLink">TIME LAPSE</a></li>
             </ul>
           </li>
-          <!-- Navigation link to Our Business page -->
-          <li><a href="our_business.html" rel="noopener" id="ourBusinessNav">Our business</a></li>
-          <!-- Navigation link to Contact page -->
-          <li><a href="contact.html" id="contactNav">Contact</a></li>
-          <!-- Language toggle button for Arabic (URL currently empty) -->
-          <li><a href="" id="languageButton" class=""><span>عربي</span></a></li>
+          <li><a href="#" data-href="OUR_BUSINESS" rel="noopener" id="ourBusinessNav">Our business</a></li>
+          <li><a href="#" data-href="CONTACT" id="contactNav">Contact</a></li>
+          <!-- Language toggle button for Arabic -->
+          <li><a id="languageButton"><span>عربي</span></a></li>
         </ul>
       </nav>
       <!-- Mobile navigation toggle icon -->
@@ -440,75 +433,57 @@
           </div>
           <!-- Social media links -->
           <div class="social-links d-flex justify-content-center justify-content-md-start mt-3">
-            <!-- Link to YouTube channel -->
-            <a href="https://www.youtube.com/@timelinesa3835" rel="noopener" target="_blank" aria-label="Youtube"><i
+            <a href="#" data-href="YOUTUBE" rel="noopener" target="_blank" aria-label="Youtube"><i
                 class="bi bi-youtube"></i></a>
-            <!-- Email link -->
-            <a href="mailto:info@timeline.sa" aria-label="Email"><i class="bi bi-envelope"></i></a>
-            <!-- Link to Vimeo profile -->
-            <a href="https://vimeo.com/timelinepe" rel="noopener" target="_blank" aria-label="Vimeo"><i
+            <a href="#" data-href="MAIL" aria-label="Email"><i class="bi bi-envelope"></i></a>
+            <a href="#" data-href="VIMEO" rel="noopener" target="_blank" aria-label="Vimeo"><i
                 class="bi bi-vimeo"></i></a>
-            <!-- Link to X (Twitter) profile -->
-            <a href="https://x.com/timeline_sa" rel="noopener" target="_blank" aria-label="X (Twitter)"><i
+            <a href="#" data-href="TWITTER" rel="noopener" target="_blank" aria-label="X (Twitter)"><i
                 class="bi bi-twitter-x"></i></a>
-            <!-- Link to Instagram profile -->
-            <a href="https://www.instagram.com/timeline_sa/" rel="noopener" target="_blank" aria-label="Instagram"><i
+            <a href="#" data-href="INSTAGRAM" rel="noopener" target="_blank" aria-label="Instagram"><i
                 class="bi bi-instagram"></i></a>
-            <!-- Link to DesignRush agency profile -->
-            <a href="https://www.designrush.com/agency/profile/timeline-for-production-events" rel="noopener"
-              target="_blank" aria-label="DesignRush Profile"><span>DR</span></a>
+            <!-- Link to DesignRush profile for agency listing -->
+            <a href="#" data-href="DESIGN_RUSH" rel="noopener" target="_blank"
+              aria-label="DesignRush Profile"><span>DR</span></a>
           </div>
         </div>
         <!-- Useful links section -->
         <div class="col-lg-2 col-md-3 col-6 footer-links">
           <h4 id="footerUsefulLinksTitle">Useful Links</h4>
           <ul>
-            <!-- Link to Hero section (current page) -->
-            <li><a href="#" id="homeNav2">Home</a></li>
-            <!-- Link to About section -->
-            <li><a href="#about" id="aboutNav2">About us</a></li>
-            <!-- Link to Services section -->
-            <li><a href="#services" id="servicesNav2">Services</a></li>
-            <!-- Link to Contact page -->
-            <li><a href="contact.html" id="contactNav2">Contact</a></li>
+            <li><a href="#" data-href="HOME" id="homeNav2">Home</a></li>
+            <li><a href="#" data-href="ABOUT" id="aboutNav2">About us</a></li>
+            <li><a href="#" data-href="SERVICES" id="servicesNav2">Services</a></li>
+            <li><a href="#" data-href="CONTACT" id="contactNav2">Contact</a></li>
           </ul>
         </div>
         <!-- Services links section -->
         <div class="col-lg-2 col-md-3 col-6 footer-links">
           <h4 id="footerOurServicesTitle">Our Services</h4>
           <ul>
-            <!-- Link to Event Management section -->
-            <li><a href="#event-management" id="eventManagementLink">Event Management</a></li>
-            <!-- Link to Services section -->
-            <li><a href="#services" id="ourServicesProductionLink">Our Services - Production</a></li>
-            <!-- Link to Production page -->
-            <li><a href="production.html" id="productionLink">Production</a></li>
-            <!-- Link to Pre-Production section on Production page -->
-            <li><a href="production.html#Pre-Production" id="preProductionLink">Pre-Production</a></li>
-            <!-- Link to Post-Production section on Production page -->
-            <li><a href="production.html#post-production" id="postProductionLink">Post-Production</a></li>
-            <!-- Link to Time Lapse section -->
-            <li><a href="#time-lapse" id="timeLapseLink">Time Lapse</a></li>
-            <!-- Link to Experience section on Awards page -->
-            <li><a href="awards.html#experience-link" id="experienceLink">Experience</a></li>
-            <!-- Link to Awards page -->
-            <li><a href="awards.html" id="awardsNav2">Awards</a></li>
+            <li><a href="#" data-href="INDEX_EVENT" id="eventManagementLink">Event Management</a></li>
+            <li><a href="#" data-href="SERVICES" id="ourServicesProductionLink">Our Services -
+                Production</a>
+            </li>
+            <li><a href="#" data-href="PRODUCTION" id="productionLink">Production</a></li>
+            <li><a href="#" data-href="PRE_PRODUCTION" id="preProductionLink">Pre-Production</a></li>
+            <li><a href="#" data-href="POST_PRODUCTION" id="postProductionLink">Post-Production</a></li>
+            <li><a href="#" data-href="INDEX_TIMELABSE" id="timeLapseLink">Time Lapse</a></li>
+            <li><a href="#" data-href="EXPERIENCE" id="experienceLink">Experience</a></li>
+            <li><a href="#" data-href="AWARDS" id="awardsNav2">Awards</a></li>
           </ul>
         </div>
         <!-- Footer logo and privacy policy link -->
         <div class="col-lg-4 col-md-12 footer-links text-center">
-          <!-- Link to Hero section -->
           <a href="#hero">
             <div class="logo-footer">
-              <!-- Site name displayed in footer logo -->
               <h1><span class="sitename">TIMELINE</span></h1>
             </div>
           </a>
           <div class="col-12 text-center mt-3">
             <!-- Link to privacy policy page -->
-            <a id="privacyPolicy" href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
-            <!-- Commented out alternative privacy policy link -->
-            <!-- <a id="privacyPolicy" href="https://timeline.sa/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> -->
+            <a id="privacyPolicy" href="#" data-href="PRIVACY" target="_blank" rel="noopener">Privacy
+              Policy</a>
           </div>
         </div>
       </div>
@@ -523,7 +498,7 @@
         <div class="credits">
           <!-- Link to the designer's website -->
           <span id="designedBy">Designed by</span>
-          <a href="https://aaplans.com/" target="_blank" rel="noopener">AAPLANS</a>
+          <a href="#" data-href="AAPLANS" target="_blank" rel="noopener">AAPLANS</a>
         </div>
       </div>
     </div>
@@ -557,6 +532,7 @@
 
   <!-- Main JavaScript file for custom scripts -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/constants.js"></script>
 </body>
 
 </html>

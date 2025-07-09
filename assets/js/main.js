@@ -813,34 +813,41 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// document.getElementById('currentYear').textContent = new Date().getFullYear();
-// // assets/js/main.js (Add/Modify this section inside your DOMContentLoaded listener)
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+// assets/js/main.js (Add/Modify this section inside your DOMContentLoaded listener)
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   // ... (Your existing code for translations, data-href, data-content, etc.) ...
+document.addEventListener('DOMContentLoaded', () => {
+  // ... (Your existing code for translations, data-href, data-content, etc.) ...
 
-//   // --- Apply SRC for iframes (data-src) ---
-//   document.querySelectorAll('iframe[data-src]').forEach(element => {
-//     const srcConstant = element.dataset.src; // Access value of data-src
-//     if (AppURLs[srcConstant]) {
-//       element.src = AppURLs[srcConstant];
-//     }
-//   });
+  // --- Apply SRC for iframes (data-src) ---
+  document.querySelectorAll('iframe[data-src]').forEach(element => {
+    const srcConstant = element.dataset.src; // Access value of data-src
+    if (LINKS[srcConstant]) {
+      element.src = LINKS[srcConstant];
+    }
+  });
+
+  document.querySelectorAll('img[data-src]').forEach(element => {
+    const srcConstant = element.dataset.src; // Access value of data-src
+    if (LINKS[srcConstant]) {
+      element.src = LINKS[srcConstant];
+    }
+  });
 
 
-//   // Apply href for anchor tags and link tags (data-href)
-//   // document.querySelectorAll('[data-href]').forEach(element => {
-//   //   const urlConstant = element.dataset.href; // Access value of data-href
-//   //   if (AppURLs[urlConstant]) {
-//   //     element.href = AppURLs[urlConstant];
-//   //   }
-//   // });
+  // Apply href for anchor tags and link tags (data-href)
+  document.querySelectorAll('[data-href]').forEach(element => {
+    const urlConstant = element.dataset.href; // Access value of data-href
+    if (LINKS[urlConstant]) {
+      element.href = LINKS[urlConstant];
+    }
+  });
 
-//   // // Apply content for meta tags (data-content)
-//   // document.querySelectorAll('[data-content]').forEach(element => {
-//   //   const contentConstant = element.dataset.content; // Access value of data-content
-//   //   if (AppURLs[contentConstant]) {
-//   //     element.setAttribute('content', AppURLs[contentConstant]);
-//   //   }
-//   // });
-// });
+  // Apply content for meta tags (data-content)
+  // document.querySelectorAll('[data-content]').forEach(element => {
+  //   const contentConstant = element.dataset.content; // Access value of data-content
+  //   if (LINKS[contentConstant]) {
+  //     element.setAttribute('content', LINKS[contentConstant]);
+  //   }
+  // });
+});

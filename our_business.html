@@ -90,33 +90,26 @@
             <!-- Main Navigation Menu -->
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="index.html" id="homeNav">Home</a></li> <!-- Home page link -->
-                    <li><a href="index.html#about" id="aboutNav">About</a></li> <!-- About section anchor -->
-                    <li><a href="index.html#services" id="servicesNav">Services</a></li>
-                    <!-- Services section anchor -->
-                    <li><a href="awards.html" id="awardsNav">Awards</a></li> <!-- Awards page -->
-
-                    <!-- Dropdown Menu for Methodology -->
-                    <li class="dropdown"><a href="production.html"><span id="productionTitle">Methodology</span>
-                            <i class="bi bi-chevron-down toggle-dropdown "></i></a>
+                    <!-- Navigation links to different sections/pages -->
+                    <li><a href="#" data-href="HOME" id="homeNav">Home</a></li>
+                    <li><a href="#" data-href="ABOUT" id="aboutNav">About</a></li>
+                    <li><a href="#" data-href="SERVICES" id="servicesNav">Services</a></li>
+                    <li><a href="#" data-href="AWARDS" id="awardsNav">Awards</a></li>
+                    <!-- Dropdown menu for methodology-related pages -->
+                    <li class="dropdown"><a href="" data-href="PRODUCTION"><span id="productionTitle">Methodology</span>
+                            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
-                            <li><a href="production.html" id="productionMenuLink">Production</a></li>
-                            <!-- Production methodology -->
-                            <li><a href="index.html#eventManagementTitle" id="eventManagementMenuLink">EVENT
-                                    MANAGEMENT</a></li> <!-- Event management section -->
-                            <li><a href="index.html#timeLapseTitle" id="timeLapseMenuLink">TIME LAPSE</a></li>
-                            <!-- Time lapse section -->
+                            <li><a href="" data-href="PRODUCTION" id="productionMenuLink">Production</a></li>
+                            <li><a href="#" data-href="INDEX_EVENT" id="eventManagementMenuLink">EVENT
+                                    MANAGEMENT</a></li>
+                            <li><a href="#" data-href="INDEX_TIMELABSE" id="timeLapseMenuLink">TIME LAPSE</a></li>
                         </ul>
                     </li>
-
-                    <li><a href="our_business.html" rel="noopener" id="ourBusinessNav">Our business</a></li>
-                    <!-- Current page -->
-                    <li><a href="contact.html" id="contactNav">Contact</a></li> <!-- Contact page -->
-
-                    <!-- Language Toggle Button -->
-                    <li>
-                        <a href="" id="languageButton" class=""><span>عربي</span></a> <!-- Arabic language toggle -->
-                    </li>
+                    <li><a href="#" data-href="OUR_BUSINESS" rel="noopener" class="active" id="ourBusinessNav">Our
+                            business</a></li>
+                    <li><a href="#" data-href="CONTACT" id="contactNav">Contact</a></li>
+                    <!-- Language toggle button for Arabic -->
+                    <li><a id="languageButton"><span>عربي</span></a></li>
                 </ul>
             </nav>
 
@@ -320,12 +313,11 @@
     <br>
     <br>
 
-    <!-- Footer Section -->
+    <!-- Footer section with contact info, links, and social media -->
     <footer id="footer" class="footer dark-background">
         <div class="container footer-top">
             <div class="row gy-4">
-
-                <!-- Contact Information Column -->
+                <!-- Contact information -->
                 <div class="col-lg-4 col-md-6 footer-about text-center text-md-end">
                     <div class="footer-contact pt-3">
                         <p id="saudiArabia2">Kingdom of Saudi Arabia</p>
@@ -339,75 +331,63 @@
                         <p><strong id="mobLabel-5">Mob:</strong> <span class="ltr-number">+966 50 440 3847</span></p>
                         <p><strong id="mobLabe2-3">Mob2:</strong> <span class="ltr-number">+966 53 238 7201</span></p>
                     </div>
-
-                    <!-- Social Media Links -->
+                    <!-- Social media links -->
                     <div class="social-links d-flex justify-content-center justify-content-md-start mt-3">
-                        <a href="https://www.youtube.com/@timelinesa3835" rel="noopener" target="_blank"
-                            aria-label="Youtube"><i class="bi bi-youtube"></i></a> <!-- YouTube channel -->
-                        <a href="mailto:info@timeline.sa" aria-label="Email"><i class="bi bi-envelope"></i></a>
-                        <!-- Email contact -->
-                        <a href="https://vimeo.com/timelinepe" rel="noopener" target="_blank" aria-label="Vimeo"><i
-                                class="bi bi-vimeo"></i></a> <!-- Vimeo profile -->
-                        <a href="https://x.com/timeline_sa" rel="noopener" target="_blank" aria-label="X (Twitter)"><i
-                                class="bi bi-twitter-x"></i></a> <!-- X (Twitter) profile -->
-                        <a href="https://www.instagram.com/timeline_sa/" rel="noopener" target="_blank"
-                            aria-label="Instagram"><i class="bi bi-instagram"></i></a> <!-- Instagram profile -->
-                        <a href="https://www.designrush.com/agency/profile/timeline-for-production-events"
-                            rel="noopener" target="_blank" aria-label="DesignRush Profile"><span>DR</span></a>
-                        <!-- DesignRush profile -->
+                        <a href="#" data-href="YOUTUBE" rel="noopener" target="_blank" aria-label="Youtube"><i
+                                class="bi bi-youtube"></i></a>
+                        <a href="#" data-href="MAIL" aria-label="Email"><i class="bi bi-envelope"></i></a>
+                        <a href="#" data-href="VIMEO" rel="noopener" target="_blank" aria-label="Vimeo"><i
+                                class="bi bi-vimeo"></i></a>
+                        <a href="#" data-href="TWITTER" rel="noopener" target="_blank" aria-label="X (Twitter)"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#" data-href="INSTAGRAM" rel="noopener" target="_blank" aria-label="Instagram"><i
+                                class="bi bi-instagram"></i></a>
+                        <!-- Link to DesignRush profile for agency listing -->
+                        <a href="#" data-href="DESIGN_RUSH" rel="noopener" target="_blank"
+                            aria-label="DesignRush Profile"><span>DR</span></a>
                     </div>
                 </div>
-
-                <!-- Useful Links Column -->
+                <!-- Useful links section -->
                 <div class="col-lg-2 col-md-3 col-6 footer-links">
                     <h4 id="footerUsefulLinksTitle">Useful Links</h4>
                     <ul>
-                        <li><a href="index.html" id="homeNav2">Home</a></li> <!-- Home page -->
-                        <li><a href="index.html#about" id="aboutNav2">About us</a></li> <!-- About section -->
-                        <li><a href="index.html#services" id="servicesNav2">Services</a></li> <!-- Services section -->
-                        <li><a href="contact.html" id="contactNav2">Contact</a></li> <!-- Contact page -->
+                        <li><a href="#" data-href="HOME" id="homeNav2">Home</a></li>
+                        <li><a href="#" data-href="ABOUT" id="aboutNav2">About us</a></li>
+                        <li><a href="#" data-href="SERVICES" id="servicesNav2">Services</a></li>
+                        <li><a href="#" data-href="CONTACT" id="contactNav2">Contact</a></li>
                     </ul>
                 </div>
-
-                <!-- Services Links Column -->
+                <!-- Services links section -->
                 <div class="col-lg-2 col-md-3 col-6 footer-links">
                     <h4 id="footerOurServicesTitle">Our Services</h4>
                     <ul>
-                        <li><a href="index.html#event-management" id="eventManagementLink">Event Management</a></li>
-                        <!-- Event management service -->
-                        <li><a href="index.html#services" id="ourServicesProductionLink">Our Services - Production</a>
-                        </li> <!-- Production services -->
-                        <li><a href="production.html#production" id="productionLink">Production</a></li>
-                        <!-- Production methodology -->
-                        <li><a href="production.html#Pre-Production" id="preProductionLink">Pre-Production</a></li>
-                        <!-- Pre-production process -->
-                        <li><a href="production.html#post-production" id="postProductionLink">Post-Production</a></li>
-                        <!-- Post-production process -->
-                        <li><a href="index.html#time-lapse" id="timeLapseLink">Time Lapse</a></li>
-                        <!-- Time lapse services -->
-                        <li><a href="awards.html#experience-link" id="experienceLink">Experience</a></li>
-                        <!-- Experience section -->
-                        <li><a href="awards.html" id="awardsNav2">Awards</a></li> <!-- Awards page -->
+                        <li><a href="#" data-href="INDEX_EVENT" id="eventManagementLink">Event Management</a></li>
+                        <li><a href="#" data-href="SERVICES" id="ourServicesProductionLink">Our Services -
+                                Production</a>
+                        </li>
+                        <li><a href="#" data-href="PRODUCTION" id="productionLink">Production</a></li>
+                        <li><a href="#" data-href="PRE_PRODUCTION" id="preProductionLink">Pre-Production</a></li>
+                        <li><a href="#" data-href="POST_PRODUCTION" id="postProductionLink">Post-Production</a></li>
+                        <li><a href="#" data-href="INDEX_TIMELABSE" id="timeLapseLink">Time Lapse</a></li>
+                        <li><a href="#" data-href="EXPERIENCE" id="experienceLink">Experience</a></li>
+                        <li><a href="#" data-href="AWARDS" id="awardsNav2">Awards</a></li>
                     </ul>
                 </div>
-
-                <!-- Logo and Privacy Policy Column -->
+                <!-- Footer logo and privacy policy link -->
                 <div class="col-lg-4 col-md-12 footer-links text-center">
-                    <!-- Footer Logo -->
                     <a href="#hero">
                         <div class="logo-footer">
-                            <h1> <span class="sitename">TIMELINE</span></h1>
+                            <h1><span class="sitename">TIMELINE</span></h1>
                         </div>
                     </a>
-                    <!-- Privacy Policy Link -->
                     <div class="col-12 text-center mt-3">
-                        <a id="privacyPolicy" href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
+                        <!-- Link to privacy policy page -->
+                        <a id="privacyPolicy" href="#" data-href="PRIVACY" target="_blank" rel="noopener">Privacy
+                            Policy</a>
                     </div>
                 </div>
-
             </div>
-
-            <!-- Copyright Section -->
+            <!-- Copyright section -->
             <div class="copyright text-center mt-4">
                 <p>
                     © <span id="footerCopyright">Copyright</span>
@@ -416,8 +396,9 @@
                     <span id="currentYear"></span>
                 </p>
                 <div class="credits">
+                    <!-- Link to the designer's website -->
                     <span id="designedBy">Designed by</span>
-                    <a href="https://aaplans.com/" target="_blank" rel="noopener">AAPLANS</a> <!-- Design credit -->
+                    <a href="#" data-href="AAPLANS" target="_blank" rel="noopener">AAPLANS</a>
                 </div>
             </div>
         </div>
@@ -443,6 +424,7 @@
 
     <!-- Custom JavaScript -->
     <script src="assets/js/main.js"></script> <!-- Main JavaScript file -->
+    <script src="assets/js/constants.js"></script>
 
     <!-- Cloudflare Turnstile (Security/CAPTCHA) -->
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
