@@ -878,4 +878,56 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     console.error("Hero video or video source element not found!");
   }
+
+  // --- Apply iframe sources ---
+  const sanadAwardIframe = document.getElementById('sanadAwardIframe');
+  if (sanadAwardIframe) {
+    sanadAwardIframe.src = VIMEO_EMBEDS.SANAD_AWARD;
+  }
+
+  const riyadhValleyIframe = document.getElementById('riyadhValleyIframe');
+  if (riyadhValleyIframe) {
+    riyadhValleyIframe.src = VIMEO_EMBEDS.RIYADH_VALLEY_FILM;
+  }
+
+  const rasAlKhairIframe = document.getElementById('rasAlKhairIframe');
+  if (rasAlKhairIframe) {
+    rasAlKhairIframe.src = VIMEO_EMBEDS.RAS_AL_KHAIR_PROJECT;
+  }
+
+  const tadawulIframe = document.getElementById('tadawulIframe');
+  if (tadawulIframe) {
+    tadawulIframe.src = VIMEO_EMBEDS.TADAWUL_INFOGRAPHICS;
+  }
+
+  const swissCornerIframe = document.getElementById('swissCornerIframe');
+  if (swissCornerIframe) {
+    swissCornerIframe.src = VIMEO_EMBEDS.SWISS_CORNER_MOTHERS_DAY;
+  }
+
+  const acwaPowerIframe = document.getElementById('acwaPowerIframe');
+  if (acwaPowerIframe) {
+    acwaPowerIframe.src = VIMEO_EMBEDS.ACWA_POWER_CORPORATE_FILM;
+  }
+
+  const madinaIframe = document.getElementById('madinaIframe');
+  if (madinaIframe) {
+    madinaIframe.src = VIMEO_EMBEDS.MADINA_DEVELOPMENT;
+  }
+
+  const monshaatIframe = document.getElementById('monshaatIframe');
+  if (monshaatIframe) {
+    monshaatIframe.src = VIMEO_EMBEDS.MONSHAAT_OVERVIEW;
+  }
+
+  const alandalusIframe = document.getElementById('alandalusIframe');
+  if (alandalusIframe) {
+    alandalusIframe.src = VIMEO_EMBEDS.ALANDALUS_PROPERTY;
+  }
+
+  // You might also want to set the "See more" button link from your LINKS object
+  const seeMoreButton = document.getElementById('btn-see-more');
+  if (seeMoreButton) {
+    seeMoreButton.href = LINKS.VIMEO; // Assuming VIMEO is the link to your general Vimeo profile
+  }
 });

@@ -75,3 +75,15 @@ const LINKS = {
     AAPLANS: "https://aaplans.com/",
     MAIL: "mailto:info@timeline.sa",
 };
+
+const VIMEO_EMBEDS = {
+    SANAD_AWARD: "https://player.vimeo.com/video/1051586854?badge=0&autopause=0&player_id=0&app_id=58479",
+    RIYADH_VALLEY_FILM: "https://player.vimeo.com/video/1051615435?badge=0&autopause=0&player_id=0&app_id=58479",
+    RAS_AL_KHAIR_PROJECT: "https://player.vimeo.com/video/981221019?badge=0&autopause=0&player_id=0&app_id=58479",
+    TADAWUL_INFOGRAPHICS: "https://player.vimeo.com/video/1007228244?badge=0&autopause=0&player_id=0&app_id=58479",
+    SWISS_CORNER_MOTHERS_DAY: "https://player.vimeo.com/video/1007226173?badge=0&autopause=0&player_id=0&app_id=58479",
+    ACWA_POWER_CORPORATE_FILM: "https://player.vimeo.com/video/976641531?badge=0&autopause=0&player_id=0&app_id=58479",
+    MADINA_DEVELOPMENT: "https://player.vimeo.com/video/976640101?badge=0&autopause=0&player_id=0&app_id=58479",
+    MONSHAAT_OVERVIEW: "https://player.vimeo.com/video/976639830?badge=0&autopause=0&player_id=0&app_id=58479",
+    ALANDALUS_PROPERTY: "https://player.vimeo.com/video/976617923?badge=0&autopause=0&player_id=0&app_id=58479"
+};
