@@ -240,7 +240,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const img = document.createElement("img");
     img.src = url;
     img.alt = `Client Image ${index + 1}`;
-    carousel.appendChild(img);
+    console.log(`Adding image: ${url}`); // Debugging line
+    carousel.appendChild(img); // this 243 line
   });
 
   // تحديد اتجاه الصفحة
